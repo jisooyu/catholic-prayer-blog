@@ -1,9 +1,7 @@
 import React from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 
-const Joyful = () => {
+
+const Sorrowful = () => {
     const data = [
         {
             id: 1,
@@ -20,15 +18,8 @@ const Joyful = () => {
     ];
 
     return (
-        <Slider autoplay={true} dots={true} infinite={true} speed={500}>
-            {data.map((item) => (
-                <div key={item.id}>
-                    <h3>{item.content}</h3>
-                </div>
-            ))}
-        </Slider>
-
+        <h1>Sorrowful</h1>
     )
 };
 
-export default Joyful;
+export default Sorrowful;

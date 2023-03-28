@@ -13,7 +13,7 @@ function Prayer({ prayer }) {
             <CardHeader sx={{ marginLeft: '20px', marginBottom: '10px', textAlign: 'center' }} title={prayer.title} subheader={prayer.subtitle} />
             <CardMedia
                 component="img"
-                image={`${process.env.PUBLIC_URL}/joyful-mystery-1.jpeg`}
+                image={prayer.img}
                 sx={{ marginLeft: '20px', maxHeight: '400px', objectFit: 'contain' }} // set the maxHeight and objectFit properties
             />
             <CardContent >
