@@ -1,7 +1,7 @@
 import Carousel from 'react-material-ui-carousel'
 import Prayer from './Prayer';
 import PrePrayer from './PrePrayer';
-import { Paper, Button } from '@mui/material'
+
 
 const CarouselComponent = ({ prayers, prePrayer }) => {
     return (
@@ -9,12 +9,9 @@ const CarouselComponent = ({ prayers, prePrayer }) => {
             animation="fade"
             interval={null}
             sx={{
-                height: '150vh',
-                width: '100vw',
                 display: 'flex',
-                alignItems: 'top',
+                alignItems: 'center',
                 justifyContent: 'center',
-                backgroundColor: 'yellow'
             }}
         >
             <PrePrayer prePrayer={prePrayer} />
