@@ -1,5 +1,6 @@
 import React from 'react'
 import { Card, CardHeader, CardMedia, CardContent, Typography, Box } from '@mui/material';
+import { Paper, Button } from '@mui/material'
 
 const PrePrayer = ({ prePrayer }) => {
     const prayerStyle = {
@@ -58,6 +59,7 @@ const PrePrayer = ({ prePrayer }) => {
                     </Typography>
                 </CardContent>
             </Card >
+            <Button className='CheckButton'>Next</Button>
         </Box>
     )
 }

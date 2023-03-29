@@ -1,5 +1,6 @@
 import React from 'react'
 import { Card, CardHeader, CardMedia, CardContent, Box } from '@mui/material';
+import { Paper, Button } from '@mui/material'
 
 function Prayer({ prayer }) {
     return (
@@ -34,6 +35,7 @@ function Prayer({ prayer }) {
                     <p style={{ marginLeft: '20px', marginBottom: '10px', }}>{prayer.ending}</p>
                 </CardContent>
             </Card>
+            <Button className='CheckButton'>Next</Button>
         </Box>
     )
 }

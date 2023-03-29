@@ -1,6 +1,7 @@
 import Carousel from 'react-material-ui-carousel'
 import Prayer from './Prayer';
 import PrePrayer from './PrePrayer';
+import { Paper, Button } from '@mui/material'
 
 const CarouselComponent = ({ prayers, prePrayer }) => {
     return (
