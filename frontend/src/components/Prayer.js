@@ -22,41 +22,44 @@ function Prayer({ prayer }) {
             flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'center',
-            height: '65vh',
+            height: '75vh',
             width: '70vw',
-            margin: '3em',
+            marginTop: '5em',
+            marginLeft: '10em',
+            marginRight: '10em',
+            backgroundColor: '#F5E8CE'
         }}>
-            <>
+            <div style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'center'
+            }}>
                 <h3 style={{
                     textAlign: 'center',
-                    marginBottom: '10px'
+                    marginBottom: '3px'
                 }}>
                     {prayer.title}
                 </h3>
-                <div style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center'
-                }}>
-                    <img style={{
-                        marginLeft: '20px',
-                        maxHeight: '500px',
-                        maxWidth: '500px',
-                        height: '100%',
-                        width: '100%',
-                        marginBottom: '10px',
-                        objectFit: 'contain',
-                    }}
-                        src={prayer.img} />
-                </div>
-                <div style={prayerStyle}>
-                    <p style={{
-                        marginLeft: '20px',
-                        marginBottom: '10px'
-                    }}>{prayer.content}</p>
-                </div>
-                <p style={repetitionStyle}>{prayer.repeat}</p>
-            </>
+                <img style={{
+                    marginLeft: '20px',
+                    height: '32vh',
+                    width: '20vw',
+                    objectFit: 'cover',
+                }}
+                    src={prayer.img}
+                    alt='Jesus'
+                />
+            </div>
+            <div style={prayerStyle}>
+                <p style={{
+                    textAlign: 'left',
+                    marginLeft: '20px',
+                    marginBottom: '2px'
+                }}>{prayer.content}</p>
+            </div>
+            <p style={repetitionStyle}>{prayer.repeat}</p>
+
         </Paper>
     )
 }
