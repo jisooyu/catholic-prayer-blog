@@ -18,6 +18,7 @@ const PrePrayer = ({ prePrayer }) => {
             margin: '3em',
         }}>
             <div style={{ margin: '20px' }}>
+                <h2 style={{ textAlign: 'center', fontWeight: 'bold' }}>{prePrayer.title}</h2>
                 <h3 style={{ textAlign: 'center' }}>{prePrayer.trinity}</h3>
                 {/* <img src={prePrayer.img} /> */}
                 <p style={{ textAlign: 'center', marginTop: '10px' }}>{prePrayer.hailMary}</p>
