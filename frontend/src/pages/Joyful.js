@@ -1,35 +1,9 @@
 import React from 'react';
-import Carousel from 'react-material-ui-carousel'
-import { Box } from '@mui/material';
-import Prayer from './Prayer';
+import CarouselComponent from '../components/CarouselComponent'
 
-const Joyful = ({ prayers }) => {
-
+const Joyful = ({ prayers, prePrayer }) => {
     return (
-        <Box
-            sx={{
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                height: '150vh',
-            }}
-        >
-            <Carousel
-                animation="fade"
-                interval={null}
-                sx={{
-                    width: '80%',
-                    height: '120vh',
-                    display: 'flex',
-                    alignItems: 'top',
-                    justifyContent: 'center',
-                }}
-            >
-                {prayers.map((prayer, id) => (
-                    <Prayer key={id} prayer={prayer} />
-                ))}
-            </Carousel>
-        </Box>
+        <CarouselComponent prayers={prayers} prePrayer={prePrayer} />
     )
 };
 
