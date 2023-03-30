@@ -1,67 +1,60 @@
-import React from 'react'
-import { Paper } from '@mui/material'
+import React, { useEffect, useState } from 'react';
+import { Grid, Paper, Typography } from '@material-ui/core';
+import useStyles from '../materialHelper/useStyles';
 
 function Prayer({ prayer }) {
 
-    const prayerStyle = {
-        textAlign: 'center',
-        marginTop: '20px',
-        marginLeft: '20em',
-        marginRight: '20em'
-    }
-    const repetitionStyle = {
-        textAlign: 'center',
-        fontWeight: 'bold',
-        marginTop: '20px',
-        marginRight: '30px'
-    }
+    const classes = useStyles();
+    const [imgHeight, setImgHeight] = useState(0);
+    const [textHeight, setTextHeight] = useState(0);
+
+    useEffect(() => {
+        const img = new Image();
+        img.src = prayer.img;
+        img.onload = () => {
+            setImgHeight(img.height);
+        };
+    }, [prayer.img]);
+
+    useEffect(() => {
+        if (imgHeight === 0) return;
+
+        const totalTextHeight = document.getElementById('prayer-texts').offsetHeight;
+        const availableTextHeight = imgHeight - totalTextHeight;
+
+        setTextHeight(availableTextHeight > 0 ? availableTextHeight : 0);
+    }, [imgHeight]);
 
     return (
-        <Paper elevation={0} sx={{
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'center',
-            height: '75vh',
-            width: '70vw',
-            marginTop: '5em',
-            marginLeft: '10em',
-            marginRight: '10em',
-            backgroundColor: '#F5E8CE'
-        }}>
-            <div style={{
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                justifyContent: 'center'
-            }}>
-                <h3 style={{
-                    textAlign: 'center',
-                    marginBottom: '3px'
-                }}>
-                    {prayer.title}
-                </h3>
-                <img style={{
-                    marginLeft: '20px',
-                    height: '32vh',
-                    width: '20vw',
-                    objectFit: 'cover',
-                }}
-                    src={prayer.img}
-                    alt='Jesus'
-                />
-            </div>
-            <div style={prayerStyle}>
-                <p style={{
-                    textAlign: 'left',
-                    marginLeft: '20px',
-                    marginBottom: '2px'
-                }}>{prayer.content}</p>
-            </div>
-            <p style={repetitionStyle}>{prayer.repeat}</p>
-
-        </Paper>
-    )
+        <div className={classes.root}>
+            <Grid container spacing={2}>
+                <Grid item xs={12} sm={12} md={6} lg={6} xl={6} style={{ height: `${imgHeight}px` }}>
+                    <Paper className={classes.paper}>
+                        <img src={prayer.img} className={classes.image} alt="Jesus" />
+                    </Paper>
+                </Grid>
+                <Grid item xs={12} sm={12} md={6} lg={6} xl={6} style={{ height: `${imgHeight}px` }}>
+                    <Grid container direction="column" justify="space-between" style={{ height: `${imgHeight}px` }}>
+                        <Grid item id="prayer-texts" style={{ height: `${textHeight / 3}px` }}>
+                            <Paper className={classes.paper}>
+                                <Typography variant="h6">{prayer.title}</Typography>
+                            </Paper>
+                        </Grid>
+                        <Grid item id="prayer-texts" style={{ height: `${textHeight / 3}px` }}>
+                            <Paper className={classes.paper}>
+                                <Typography variant="body1">{prayer.content}</Typography>
+                            </Paper>
+                        </Grid>
+                        <Grid item id="prayer-texts" style={{ height: `${textHeight / 3}px` }}>
+                            <Paper className={classes.paper}>
+                                <Typography variant="h6">{prayer.repeat}</Typography>
+                            </Paper>
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </div>
+    );
 }
 
 export default Prayer;
