@@ -1,6 +1,5 @@
 import React from 'react'
 import { Paper, Button } from '@mui/material'
-
 const PrePrayer = ({ prePrayer }) => {
 
     const prayerTitle = { textAlign: 'center', marginTop: '20px' }
@@ -15,9 +14,8 @@ const PrePrayer = ({ prePrayer }) => {
             justifyContent: 'center',
             height: '65vh',
             width: '70vw',
-            margin: '3em',
         }}>
-            <div style={{ margin: '20px' }}>
+            <div style={{ margin: '20px', paddingTop: '12px' }}>
                 <h2 style={{ textAlign: 'center', fontWeight: 'bold' }}>{prePrayer.title}</h2>
                 <h3 style={{ textAlign: 'center' }}>{prePrayer.trinity}</h3>
                 {/* <img src={prePrayer.img} /> */}
@@ -41,5 +39,6 @@ const PrePrayer = ({ prePrayer }) => {
         </Paper>
     )
 }
+
 
 export default PrePrayer
