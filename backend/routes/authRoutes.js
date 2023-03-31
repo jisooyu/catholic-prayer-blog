@@ -31,8 +31,5 @@ module.exports = (app) => {
             res.send({ message: 'Logged out successfully' })
         });
     });
-    // app.get('/api/logout', (req, res) => {
-    //     req.logout(); // This is a Passport function that removes the user's session
-    //     res.redirect('/'); // Redirect the user back to the home page
-    // });
+
 }
