@@ -13,7 +13,7 @@ const PrePrayer = ({ prePrayer }) => {
         marginTop: isSmallScreen ? '2em' : '5em',
         height: isSmallScreen ? '90vh' : '70vh',
         paddingTop: isSmallScreen ? '15em' : '15em',
-        overflow: 'auto',
+        overflow: 'scroll',
     };
     const prayerTitle = { textAlign: 'center', marginTop: '20px' }
     const repetitionStyle = { textAlign: 'center', fontWeight: 'bold', marginTop: '20px', marginRight: '30px' }
