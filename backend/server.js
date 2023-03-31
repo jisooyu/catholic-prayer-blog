@@ -42,21 +42,21 @@ app.use(passport.session());
 
 require('./routes/authRoutes')(app);
 
-
-if (process.env.NODE_ENV = 'production') {
+if (process.env.NODE_ENV === 'production') {
     /*
-    Express will server up production assets
+    Express will serve up production assets
     like our main.js or main.css files
     */
     app.use(express.static('frontend/build'));
 
-    // Express will serve up index.html file
-    // if it doen't recognize the route
+    // Express will serve up the index.html file
+    // if it doesn't recognize the route
     const path = require('path');
     app.get('*', (req, res) => {
         res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'));
     });
 }
+
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
