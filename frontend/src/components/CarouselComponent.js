@@ -11,7 +11,6 @@ const CarouselComponent = ({ prayers, prePrayer }) => {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                backgroundColor: '#F7E7E7'
             }}
         >
             <PrePrayer prePrayer={prePrayer} />

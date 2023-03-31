@@ -1,21 +1,27 @@
 import React from 'react'
-import { Paper, Button } from '@mui/material'
+import { Paper, Button, useMediaQuery, useTheme } from '@mui/material'
 const PrePrayer = ({ prePrayer }) => {
+    const theme = useTheme();
+    const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
 
+    const paperStyle = {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: isSmallScreen ? '82vw' : '70vw',
+        marginTop: isSmallScreen ? '2em' : '5em',
+        height: isSmallScreen ? '90vh' : '70vh',
+        paddingTop: isSmallScreen ? '15em' : '15em',
+        overflow: 'auto',
+    };
     const prayerTitle = { textAlign: 'center', marginTop: '20px' }
     const repetitionStyle = { textAlign: 'center', fontWeight: 'bold', marginTop: '20px', marginRight: '30px' }
     const prayerStyle = { display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '5em', marginLeft: '5em', width: '80%' }
 
     return (
-        <Paper sx={{
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'center',
-            height: '65vh',
-            width: '70vw',
-        }}>
-            <div style={{ margin: '20px', paddingTop: '12px' }}>
+        <Paper elevation={0} sx={paperStyle} >
+            <div style={{ margin: '20px', paddingTop: '30px' }}>
                 <h2 style={{ textAlign: 'center', fontWeight: 'bold' }}>{prePrayer.title}</h2>
                 <h3 style={{ textAlign: 'center' }}>{prePrayer.trinity}</h3>
                 {/* <img src={prePrayer.img} /> */}
@@ -36,7 +42,7 @@ const PrePrayer = ({ prePrayer }) => {
                 <h5 style={repetitionStyle}>{prePrayer.repititionTwo}</h5>
             </div>
             <Button className='CheckButton'>Next</Button>
-        </Paper>
+        </Paper >
     )
 }
 
