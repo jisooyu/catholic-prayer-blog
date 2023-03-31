@@ -7,10 +7,11 @@ import SlowMotionVideoIcon from '@mui/icons-material/SlowMotionVideo';
 import LoginIcon from '@mui/icons-material/Login';
 import LogoutIcon from '@mui/icons-material/Logout';
 
-function Header() {
+const Header = () => {
     const userObject = useContext(userContext);
     const navigate = useNavigate();
     const [anchorEl, setAnchorEl] = useState(null);
+
     const googleLogin = () => {
         window.location.href = '/auth/google';
     };
@@ -23,11 +24,14 @@ function Header() {
             console.log(error);
         }
     };
+
     const handleMenuOpen = (event) => {
+        document.body.classList.add('menu-open');
         setAnchorEl(event.currentTarget);
     };
 
     const handleMenuClose = () => {
+        document.body.classList.remove('menu-open');
         setAnchorEl(null);
     };
 
@@ -36,23 +40,19 @@ function Header() {
         navigate(route);
     }
 
-    const menuItemStyle =
-    {
-        color: "#333",
-        fontSize: "14px",
-        "&:hover": {
-            backgroundColor: "#f5f5f5"
-        }
-    }
+    const linkTextStyle = {
+        textDecoration: 'none',
+        color: '#e3e3e3',
+        marginLeft: '20px !important'
+    };
 
-    const linkTextStyle = { textDecoration: 'none', color: 'inherit', marginLeft: '30px' };
     return (
         <div style={{ height: 'auto' }}>
-            <AppBar sx={{ marginBottom: 10 }}>
-                <Toolbar >
-                    <SlowMotionVideoIcon />
+            <AppBar sx={{ marginBottom: '10px', backgroundColor: '#080957 !important' }}>
+                <Toolbar sx={{ marginRight: '5px !important' }} >
+                    <SlowMotionVideoIcon sx={{ color: 'white !important' }} />
                     <Typography>
-                        <Link href='/' sx={{ textDecoration: 'none', color: 'inherit' }}>Slow Coding</Link>
+                        <Link href='/' sx={linkTextStyle}>Catholic Prayers</Link>
                     </Typography>
                     <Typography>
                         <Link href='/prague' sx={linkTextStyle}>Infant Jesus</Link>
@@ -63,7 +63,8 @@ function Header() {
                     <Typography>
                         <Link href='/faust' sx={linkTextStyle}>Sister Faustina</Link>
                     </Typography>
-                    <Typography sx={{ textDecoration: 'none', color: 'inherit', marginLeft: '30px', cursor: 'pointer' }} onClick={handleMenuOpen}>
+                    {/* problem occurs here. 왜 MenuItem을 선택하면 header의 color가 바뀔까? */}
+                    <Typography sx={{ marginLeft: '20px !important', cursor: 'pointer', color: '#e3e3e3', }} onClick={handleMenuOpen}>
                         Rosary
                     </Typography>
                     <Menu
@@ -71,19 +72,36 @@ function Header() {
                         open={Boolean(anchorEl)}
                         onClose={handleMenuClose}
                     >
-                        <MenuItem onClick={() => handleMenuItemClick('/joyful')} sx={menuItemStyle} >Joyful Mysteries</MenuItem>
-                        <MenuItem onClick={() => handleMenuItemClick('/luminous')} sx={menuItemStyle}>Luminous Mysteries</MenuItem>
-                        <MenuItem onClick={() => handleMenuItemClick('/sorrowful')} sx={menuItemStyle}>Sorrowful Mysteries</MenuItem>
-                        <MenuItem onClick={() => handleMenuItemClick('/glorious')} sx={menuItemStyle}>Glorious Mysteries</MenuItem>
+                        <MenuItem
+                            onClick={() => handleMenuItemClick('/joyful')}
+                        >Joyful Mysteries</MenuItem>
+                        <MenuItem
+                            onClick={() => handleMenuItemClick('/luminous')}
+                        >Luminous Mysteries</MenuItem>
+                        <MenuItem
+                            onClick={() => handleMenuItemClick('/sorrowful')}
+                        >Sorrowful Mysteries</MenuItem>
+                        <MenuItem
+                            onClick={() => handleMenuItemClick('/glorious')}
+                        >Glorious Mysteries</MenuItem>
                     </Menu>
+
                     <Toolbar style={{ marginLeft: 'auto' }}>
                         {userObject ? (
-                            <div style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}>
+                            <div style={{
+                                display: 'flex',
+                                alignItems: 'center',
+                                cursor: 'pointer'
+                            }}>
                                 <LogoutIcon onClick={googleLogout} />
                                 <Typography onClick={googleLogout} variant='body1'>Logout</Typography>
                             </div>
                         ) : (
-                            <div style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}>
+                            <div style={{
+                                display: 'flex',
+                                alignItems: 'center',
+                                cursor: 'pointer'
+                            }}>
                                 <LoginIcon onClick={googleLogin} />
                                 <Typography onClick={googleLogin} variant='body1'>Google Login</Typography>
                             </div>

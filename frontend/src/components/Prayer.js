@@ -1,43 +1,37 @@
-import React from 'react'
-import { Card, CardHeader, CardMedia, CardContent, Box } from '@mui/material';
-import { Paper, Button } from '@mui/material'
+import React from 'react';
+import { Grid, Paper, Typography } from '@material-ui/core';
+import useStyles from '../materialHelper/useStyles';
 
 function Prayer({ prayer }) {
+    const classes = useStyles();
     return (
-        <Box
-            sx={{
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                height: '65vh',
-                width: '100vw',
-                backgroundColor: 'red'
-            }}
-        >
-            <Card sx={{
-                maxWidth: 500,
-                display: 'flex',
-                marginTop: '140px',
-                alignItems: 'top',
-                justifyContent: 'center',
-                flexDirection: 'column',
-                backgroundColor: 'blue'
-            }}>
-                <CardHeader sx={{ marginLeft: '20px', marginBottom: '10px', textAlign: 'center' }} title={prayer.title} subheader={prayer.subtitle} />
-                <CardMedia
-                    component="img"
-                    image={prayer.img}
-                    sx={{ marginLeft: '20px', maxHeight: '400px', objectFit: 'contain' }} // set the maxHeight and objectFit properties
-                />
-                <CardContent >
-                    <p style={{ marginLeft: '20px', marginBottom: '10px' }}>{prayer.content}</p>
-                    <p style={{ marginLeft: '20px', marginBottom: '10px', fontWeight: 'bold', }}>{prayer.repeat}</p>
-                    <p style={{ marginLeft: '20px', marginBottom: '10px', }}>{prayer.ending}</p>
-                </CardContent>
-            </Card>
-            <Button className='CheckButton'>Next</Button>
-        </Box>
-    )
+        <div className={classes.root}>
+            <Grid container spacing={2} style={{ marginTop: '58px' }} >
+                <Grid item xs={12} sm={12} md={6} lg={6} xl={6} style={{ height: '200px' }}>
+                    <Paper className={classes.paper} elevation={0} >
+                        <img src={prayer.img} className={classes.image} alt="Jesus" />
+                    </Paper>
+                </Grid>
+                <Grid item xs={12} sm={12} md={6} lg={6} xl={6} style={{ height: '300px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                    <Grid item style={{ height: '50px' }}>
+                        <Paper className={classes.paper} elevation={0}>
+                            <Typography variant="h6" className={classes.title}>{prayer.title}</Typography>
+                        </Paper>
+                    </Grid>
+                    <Grid item style={{ height: '200px' }} >
+                        <Paper className={classes.paper} elevation={0}>
+                            <p style={{ textAlign: 'left' }}>{prayer.content}</p>
+                        </Paper>
+                    </Grid>
+                    <Grid item style={{ height: '50px' }}>
+                        <Paper className={classes.paper} elevation={0}>
+                            <Typography variant="h6" className={classes.title}>{prayer.repeat}</Typography>
+                        </Paper>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </div >
+    );
 }
 
 export default Prayer;
