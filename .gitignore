@@ -1,3 +1,4 @@
 node_modules/
 /package-lock.json
 backend/config/dev.js
+frontend/build/
