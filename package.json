@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "19.6.0",
+    "npm": "9.5.0"
+  },
   "scripts": {
-    "start": "node backend/server.js",
+    "start": "node server.js",
     "server": "nodemon backend/server.js",
     "client": "npm start --prefix frontend",
     "dev": "concurrently \" npm run server \" \" npm run client \""
