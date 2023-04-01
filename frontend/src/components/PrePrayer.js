@@ -1,5 +1,5 @@
 import React from 'react'
-import { Paper, Button, useMediaQuery, useTheme } from '@mui/material'
+import { Paper, useMediaQuery, useTheme } from '@mui/material'
 const PrePrayer = ({ prePrayer }) => {
     const theme = useTheme();
     const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
@@ -9,11 +9,11 @@ const PrePrayer = ({ prePrayer }) => {
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        width: isSmallScreen ? '82vw' : '70vw',
+        width: isSmallScreen ? '82vw' : '60vw',
         marginTop: isSmallScreen ? '2em' : '5em',
         marginLeft: isSmallScreen ? '2em' : '5em',
-        height: isSmallScreen ? '90vh' : '70vh',
-        paddingTop: isSmallScreen ? '15em' : '15em',
+        height: isSmallScreen ? '90vh' : '80vh',
+        paddingTop: isSmallScreen ? '15em' : '3em',
         overflow: 'scroll',
     };
     const prayerTitle = { textAlign: 'center', marginTop: '20px' }
@@ -41,7 +41,6 @@ const PrePrayer = ({ prePrayer }) => {
                 </div>
                 <h5 style={repetitionStyle}>{prePrayer.repititionTwo}</h5>
             </div>
-            <Button className='CheckButton'>Next</Button>
         </Paper >
     )
 }

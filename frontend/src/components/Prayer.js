@@ -1,22 +1,8 @@
 import * as React from 'react';
-import { styled } from '@mui/material/styles';
-import Grid from '@mui/material/Grid';
-import Paper from '@mui/material/Paper';
-import Typography from '@mui/material/Typography';
-import ButtonBase from '@mui/material/ButtonBase';
+import { styled, Grid, Paper, Typography, ButtonBase, useMediaQuery, useTheme } from '@mui/material'
 
-const Img = styled('img')({
-    margin: 'auto',
-    display: 'block',
-    maxWidth: '100%',
-    maxHeight: '100%',
-});
-
-const Prayer = ({ prayer }) => {
-    return (
-        <Paper
-            elevation={0}
-            sx={{
+/*
+{
                 p: '30px 0 0 0',
                 margin: '2.5em auto 0',
                 overflow: 'scroll',
@@ -26,11 +12,38 @@ const Prayer = ({ prayer }) => {
                 flexGrow: 1,
                 backgroundColor: (theme) =>
                     theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-            }}
+            }
+*/
+const Prayer = ({ prayer }) => {
+    const theme = useTheme();
+    const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
+
+    const Img = styled('img')({
+        margin: 'auto',
+        display: 'block',
+        maxWidth: '100%',
+        maxHeight: '100%',
+    });
+    const paperStyle = {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: isSmallScreen ? '82vw' : '40vw',
+        marginTop: isSmallScreen ? '2em' : '1em',
+        marginLeft: isSmallScreen ? '2em' : '5em',
+        height: isSmallScreen ? '80vh' : '60vh',
+        paddingTop: isSmallScreen ? '15em' : '2em',
+        overflow: 'scroll',
+    };
+    return (
+        <Paper
+            elevation={0}
+            sx={paperStyle}
         >
             <Grid container spacing={2}>
                 <Grid item>
-                    <ButtonBase sx={{ width: 128, height: 128 }}>
+                    <ButtonBase sx={{ width: 150, height: 150 }}>
                         <Img alt="complex" src={prayer.img} />
                     </ButtonBase>
                 </Grid>
