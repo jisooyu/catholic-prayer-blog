@@ -5,12 +5,13 @@ const PrePrayer = ({ prePrayer }) => {
     const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
 
     const paperStyle = {
-        display: { xs: 'none', lg: 'flex' },
+        display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
         width: isSmallScreen ? '82vw' : '70vw',
         marginTop: isSmallScreen ? '2em' : '5em',
+        marginLeft: isSmallScreen ? '2em' : '5em',
         height: isSmallScreen ? '90vh' : '70vh',
         paddingTop: isSmallScreen ? '15em' : '15em',
         overflow: 'scroll',
