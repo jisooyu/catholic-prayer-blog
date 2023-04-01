@@ -7,6 +7,7 @@ const CarouselComponent = ({ prayers, prePrayer }) => {
         <Carousel
             animation="fade"
             interval={null}
+            swipe={false}
             sx={{
                 display: 'flex',
                 alignItems: 'center',
