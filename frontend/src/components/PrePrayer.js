@@ -5,7 +5,7 @@ const PrePrayer = ({ prePrayer }) => {
     const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
 
     const paperStyle = {
-        display: 'flex',
+        display: { xs: 'none', lg: 'flex' },
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
