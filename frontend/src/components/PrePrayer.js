@@ -9,11 +9,11 @@ const PrePrayer = ({ prePrayer }) => {
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        width: isSmallScreen ? '82vw' : '60vw',
+        width: isSmallScreen ? '70vw' : '60vw',
         marginTop: isSmallScreen ? '2em' : '5em',
-        marginLeft: isSmallScreen ? '2em' : '5em',
-        height: isSmallScreen ? '80vh' : '80vh',
-        paddingTop: isSmallScreen ? '15em' : '3em',
+        marginLeft: isSmallScreen ? '1em' : '5em',
+        height: isSmallScreen ? '85vh' : '80vh',
+        paddingTop: isSmallScreen ? '20em' : '3em',
         overflow: 'scroll',
     };
     const prayerTitle = { textAlign: 'center', marginTop: '20px' }
