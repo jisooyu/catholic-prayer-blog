@@ -12,7 +12,7 @@ const PrePrayer = ({ prePrayer }) => {
         width: isSmallScreen ? '82vw' : '60vw',
         marginTop: isSmallScreen ? '2em' : '5em',
         marginLeft: isSmallScreen ? '2em' : '5em',
-        height: isSmallScreen ? '90vh' : '80vh',
+        height: isSmallScreen ? '80vh' : '80vh',
         paddingTop: isSmallScreen ? '15em' : '3em',
         overflow: 'scroll',
     };
