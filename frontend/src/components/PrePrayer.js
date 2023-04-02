@@ -7,13 +7,13 @@ const PrePrayer = ({ prePrayer }) => {
     const paperStyle = {
         display: 'flex',
         flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        width: isSmallScreen ? '70vw' : '60vw',
+        alignItems: 'left',
+        justifyContent: 'left',
+        width: isSmallScreen ? '75vw' : '60vw',
         marginTop: isSmallScreen ? '2em' : '5em',
-        marginLeft: isSmallScreen ? '1em' : '5em',
+        marginLeft: isSmallScreen ? 0 : '5em',
         height: isSmallScreen ? '85vh' : '80vh',
-        paddingTop: isSmallScreen ? '20em' : '3em',
+        paddingTop: isSmallScreen ? '2em' : '3em',
         overflow: 'scroll',
     };
     const prayerTitle = { textAlign: 'center', marginTop: '20px' }
