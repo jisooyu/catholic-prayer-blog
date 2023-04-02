@@ -19,7 +19,7 @@ const Prayer = ({ prayer }) => {
         width: isSmallScreen ? '82vw' : '40vw',
         marginTop: isSmallScreen ? '2em' : '1em',
         marginLeft: isSmallScreen ? '2em' : '5em',
-        height: isSmallScreen ? '85vh' : '60vh',
+        height: isSmallScreen ? '85vh' : '35vh',
         paddingTop: isSmallScreen ? '2em' : '1em',
         overflow: 'scroll',
     };
