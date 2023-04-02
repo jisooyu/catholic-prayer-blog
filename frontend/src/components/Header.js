@@ -40,6 +40,7 @@ const Header = () => {
         navigate(route);
     }
 
+
     const linkTextStyle = {
         textDecoration: 'none',
         color: '#e3e3e3',
