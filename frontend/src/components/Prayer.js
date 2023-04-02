@@ -1,19 +1,6 @@
 import * as React from 'react';
 import { styled, Grid, Paper, Typography, ButtonBase, useMediaQuery, useTheme } from '@mui/material'
 
-/*
-{
-                p: '30px 0 0 0',
-                margin: '2.5em auto 0',
-                overflow: 'scroll',
-                height: 800,
-                maxWidth: '800 px !important',
-                maxHeight: '200px !important',
-                flexGrow: 1,
-                backgroundColor: (theme) =>
-                    theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-            }
-*/
 const Prayer = ({ prayer }) => {
     const theme = useTheme();
     const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
@@ -32,8 +19,8 @@ const Prayer = ({ prayer }) => {
         width: isSmallScreen ? '82vw' : '40vw',
         marginTop: isSmallScreen ? '2em' : '1em',
         marginLeft: isSmallScreen ? '2em' : '5em',
-        height: isSmallScreen ? '80vh' : '60vh',
-        paddingTop: isSmallScreen ? '15em' : '1em',
+        height: isSmallScreen ? '85vh' : '60vh',
+        paddingTop: isSmallScreen ? '2em' : '1em',
         overflow: 'scroll',
     };
     return (
