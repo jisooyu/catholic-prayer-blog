@@ -13,7 +13,7 @@ const Header = () => {
     const theme = createTheme({
         typography: {
             body1: {
-                fontSize: '16px',
+                fontSize: '8px',
             },
         },
     });
