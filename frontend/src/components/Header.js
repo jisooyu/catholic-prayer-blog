@@ -44,7 +44,6 @@ const Header = () => {
         navigate(route);
     }
 
-
     const linkTextStyle = {
         textDecoration: 'none',
         color: '#e3e3e3',
@@ -55,7 +54,7 @@ const Header = () => {
         marginLeft: isSmallScreen ? 1 : '5px',
         marginBottom: isSmallScreen ? 1 : '10px',
         backgroundColor: '#080957 !important',
-        fontSize: isSmallScreen ? '10px' : '12px',
+        fontSize: isSmallScreen ? '8px' : '12px',
     }
 
     return (
