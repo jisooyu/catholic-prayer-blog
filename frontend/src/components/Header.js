@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { userContext } from '../context/AuthContext';
 import axios from 'axios';
-import { AppBar, Toolbar, Typography, Link, Menu, MenuItem, useMediaQuery, useTheme } from '@mui/material';
+import { AppBar, Toolbar, Typography, Link, Menu, MenuItem, useMediaQuery, createTheme, ThemeProvider } from '@mui/material';
 import SlowMotionVideoIcon from '@mui/icons-material/SlowMotionVideo';
 import LoginIcon from '@mui/icons-material/Login';
 import LogoutIcon from '@mui/icons-material/Logout';
@@ -10,6 +10,14 @@ import LogoutIcon from '@mui/icons-material/Logout';
 const Header = () => {
     // const theme = useTheme();
     // const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
+    const theme = createTheme({
+        typography: {
+            body1: {
+                fontSize: '16px',
+            },
+        },
+    });
+
     const isSmallScreen = useMediaQuery('(max-width:375px)');
 
     const userObject = useContext(userContext);
@@ -59,67 +67,70 @@ const Header = () => {
 
     return (
         <div style={{ height: 'auto' }}>
-            <AppBar sx={{ backgroundColor: '#9fd3c7 !important' }}>
-                <Toolbar sx={toolbarStyle} >
-                    <SlowMotionVideoIcon sx={{ color: 'white !important' }} />
-                    <Typography>
-                        <Link href='/' sx={linkTextStyle}>Catholic Prayers</Link>
-                    </Typography>
-                    <Typography>
-                        <Link href='/prague' sx={linkTextStyle}>Infant Jesus</Link>
-                    </Typography>
-                    <Typography>
-                        <Link href='/fatima' sx={linkTextStyle}>Our Lady of Fatima</Link>
-                    </Typography>
-                    <Typography>
-                        <Link href='/faust' sx={linkTextStyle}>Sister Faustina</Link>
-                    </Typography>
-                    {/* problem occurs here. 왜 MenuItem을 선택하면 header의 color가 바뀔까? */}
-                    <Typography sx={{ cursor: 'pointer', color: '#e3e3e3', }} onClick={handleMenuOpen}>
-                        Rosary
-                    </Typography>
-                    <Menu
-                        anchorEl={anchorEl}
-                        open={Boolean(anchorEl)}
-                        onClose={handleMenuClose}
-                    >
-                        <MenuItem
-                            onClick={() => handleMenuItemClick('/joyful')}
-                        >Joyful Mysteries</MenuItem>
-                        <MenuItem
-                            onClick={() => handleMenuItemClick('/luminous')}
-                        >Luminous Mysteries</MenuItem>
-                        <MenuItem
-                            onClick={() => handleMenuItemClick('/sorrowful')}
-                        >Sorrowful Mysteries</MenuItem>
-                        <MenuItem
-                            onClick={() => handleMenuItemClick('/glorious')}
-                        >Glorious Mysteries</MenuItem>
-                    </Menu>
+            <ThemeProvider theme={theme}>
+                <AppBar sx={{ backgroundColor: '#9fd3c7 !important' }}>
+                    <Toolbar sx={toolbarStyle} >
+                        <SlowMotionVideoIcon sx={{ color: 'white !important' }} />
+                        <Typography>
+                            <Link href='/' sx={linkTextStyle}>Catholic Prayers</Link>
+                        </Typography>
+                        <Typography>
+                            <Link href='/prague' sx={linkTextStyle}>Infant Jesus</Link>
+                        </Typography>
+                        <Typography>
+                            <Link href='/fatima' sx={linkTextStyle}>Our Lady of Fatima</Link>
+                        </Typography>
+                        <Typography>
+                            <Link href='/faust' sx={linkTextStyle}>Sister Faustina</Link>
+                        </Typography>
 
-                    <Toolbar style={{ marginLeft: 'auto' }}>
-                        {userObject ? (
-                            <div style={{
-                                display: 'flex',
-                                alignItems: 'center',
-                                cursor: 'pointer'
-                            }}>
-                                <LogoutIcon onClick={googleLogout} />
-                                <Typography onClick={googleLogout} variant='body1'>Logout</Typography>
-                            </div>
-                        ) : (
-                            <div style={{
-                                display: 'flex',
-                                alignItems: 'center',
-                                cursor: 'pointer'
-                            }}>
-                                <LoginIcon onClick={googleLogin} />
-                                <Typography onClick={googleLogin} variant='body1'>Google Login</Typography>
-                            </div>
-                        )}
+                        {/* problem occurs here. 왜 MenuItem을 선택하면 header의 color가 바뀔까? */}
+                        <Typography sx={{ cursor: 'pointer', color: '#e3e3e3', }} onClick={handleMenuOpen}>
+                            Rosary
+                        </Typography>
+                        <Menu
+                            anchorEl={anchorEl}
+                            open={Boolean(anchorEl)}
+                            onClose={handleMenuClose}
+                        >
+                            <MenuItem
+                                onClick={() => handleMenuItemClick('/joyful')}
+                            >Joyful Mysteries</MenuItem>
+                            <MenuItem
+                                onClick={() => handleMenuItemClick('/luminous')}
+                            >Luminous Mysteries</MenuItem>
+                            <MenuItem
+                                onClick={() => handleMenuItemClick('/sorrowful')}
+                            >Sorrowful Mysteries</MenuItem>
+                            <MenuItem
+                                onClick={() => handleMenuItemClick('/glorious')}
+                            >Glorious Mysteries</MenuItem>
+                        </Menu>
+
+                        <Toolbar style={{ marginLeft: 'auto' }}>
+                            {userObject ? (
+                                <div style={{
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    cursor: 'pointer'
+                                }}>
+                                    <LogoutIcon onClick={googleLogout} />
+                                    <Typography onClick={googleLogout} variant='body1'>Logout</Typography>
+                                </div>
+                            ) : (
+                                <div style={{
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    cursor: 'pointer'
+                                }}>
+                                    <LoginIcon onClick={googleLogin} />
+                                    <Typography onClick={googleLogin} variant='body1'>Google Login</Typography>
+                                </div>
+                            )}
+                        </Toolbar>
                     </Toolbar>
-                </Toolbar>
-            </AppBar>
+                </AppBar>
+            </ ThemeProvider>
         </div>
     );
 }
