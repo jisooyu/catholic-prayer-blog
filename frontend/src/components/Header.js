@@ -54,20 +54,13 @@ const Header = () => {
     const linkTextStyle = {
         textDecoration: 'none',
         color: '#e3e3e3',
-        marginLeft: '20px !important'
+        marginLeft: isSmallScreen ? '3px' : '20px !important'
     };
-
-    // const toolbarStyle = {
-    //     marginLeft: isSmallScreen ? 1 : '5px',
-    //     marginBottom: isSmallScreen ? 1 : '10px',
-    //     backgroundColor: '#080957 !important',
-    //     fontSize: isSmallScreen ? '2px' : '12px',
-    // }
 
     return (
         <div style={{ height: 'auto' }}>
             <ThemeProvider theme={theme}>
-                <AppBar sx={{ backgroundColor: '#9fd3c7 !important' }}>
+                <AppBar>
                     <Toolbar sx={{ marginLeft: isSmallScreen ? 1 : '5px', marginBottom: isSmallScreen ? 1 : '10px', backgroundColor: '#080957 !important' }} >
                         <SlowMotionVideoIcon sx={{ color: 'white !important' }} />
                         <Typography>
