@@ -18,7 +18,7 @@ const Header = () => {
         },
     });
 
-    const isSmallScreen = useMediaQuery('(max-width:375px)');
+    const isSmallScreen = useMediaQuery('(max-width:55px)');
 
     const userObject = useContext(userContext);
     const navigate = useNavigate();
