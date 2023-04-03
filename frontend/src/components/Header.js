@@ -63,7 +63,7 @@ const Header = () => {
                             </Link>
                         </Typography>
                         <Typography>
-                            <Link href='/prague' sx={{ fontSize: isSmallScreen ? '10px !important' : '16px !important' }} style={{ fontSize: isSmallScreen ? '10px !important' : '16px !important' }}>
+                            <Link href='/prague' sx={{ color: 'white', textDecoration: 'none', '&:hover': { textDecoration: 'underline' } }} style={{ fontSize: isSmallScreen ? '10px !important' : '16px !important' }}>
                                 Infant Jesus
                             </Link>
                         </Typography>
