@@ -58,12 +58,12 @@ const Header = () => {
                     <Toolbar sx={{ marginLeft: isSmallScreen ? '1px' : '5px', marginBottom: isSmallScreen ? '1px' : '10px' }} >
                         <SlowMotionVideoIcon sx={{ color: 'white' }} />
                         <Typography>
-                            <Link href='/' sx={{ color: 'white', textDecoration: 'none', '&:hover': { textDecoration: 'underline' } }} style={{ fontSize: isSmallScreen ? '10px !important' : '16px !important' }}>
+                            <Link href='/' sx={{ color: 'white', textDecoration: 'none', '&:hover': { textDecoration: 'underline', marginLeft: '1px' } }} style={{ fontSize: isSmallScreen ? '8px !important' : '16px !important' }}>
                                 Catholic Prayers
                             </Link>
                         </Typography>
                         <Typography>
-                            <Link href='/prague' sx={{ color: 'white', textDecoration: 'none', '&:hover': { textDecoration: 'underline' } }} style={{ fontSize: isSmallScreen ? '10px !important' : '16px !important' }}>
+                            <Link href='/prague' sx={{ color: 'white', textDecoration: 'none', '&:hover': { textDecoration: 'underline', marginLeft: '1px' } }} style={{ fontSize: isSmallScreen ? '10px !important' : '16px !important' }}>
                                 Infant Jesus
                             </Link>
                         </Typography>
