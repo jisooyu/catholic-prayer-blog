@@ -10,15 +10,14 @@ import LogoutIcon from '@mui/icons-material/Logout';
 const Header = () => {
     // const theme = useTheme();
     // const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
+    const isSmallScreen = useMediaQuery('(max-width:376px)');
     const theme = createTheme({
         typography: {
             body1: {
-                fontSize: '8px',
+                fontSize: isSmallScreen ? '8px' : '16px',
             },
         },
     });
-
-    const isSmallScreen = useMediaQuery('(max-width:55px)');
 
     const userObject = useContext(userContext);
     const navigate = useNavigate();
@@ -58,18 +57,18 @@ const Header = () => {
         marginLeft: '20px !important'
     };
 
-    const toolbarStyle = {
-        marginLeft: isSmallScreen ? 1 : '5px',
-        marginBottom: isSmallScreen ? 1 : '10px',
-        backgroundColor: '#080957 !important',
-        fontSize: isSmallScreen ? '2px' : '12px',
-    }
+    // const toolbarStyle = {
+    //     marginLeft: isSmallScreen ? 1 : '5px',
+    //     marginBottom: isSmallScreen ? 1 : '10px',
+    //     backgroundColor: '#080957 !important',
+    //     fontSize: isSmallScreen ? '2px' : '12px',
+    // }
 
     return (
         <div style={{ height: 'auto' }}>
             <ThemeProvider theme={theme}>
                 <AppBar sx={{ backgroundColor: '#9fd3c7 !important' }}>
-                    <Toolbar sx={toolbarStyle} >
+                    <Toolbar sx={{ marginLeft: isSmallScreen ? 1 : '5px', marginBottom: isSmallScreen ? 1 : '10px', }} >
                         <SlowMotionVideoIcon sx={{ color: 'white !important' }} />
                         <Typography>
                             <Link href='/' sx={linkTextStyle}>Catholic Prayers</Link>
