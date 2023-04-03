@@ -50,7 +50,7 @@ const Header = () => {
         handleMenuClose();
         navigate(route);
     }
-    //testing
+
     return (
         <div style={{ height: 'auto' }}>
             <ThemeProvider theme={theme}>
@@ -63,17 +63,17 @@ const Header = () => {
                             </Link>
                         </Typography>
                         <Typography>
-                            <Link href='/prague' sx={{ ...linkTextStyle, fontSize: isSmallScreen ? '10px !important' : '16px !important' }}>
+                            <Link href='/prague' sx={{ fontSize: isSmallScreen ? '10px !important' : '16px !important' }}>
                                 Infant Jesus
                             </Link>
                         </Typography>
                         <Typography>
-                            <Link href='/fatima' sx={{ ...linkTextStyle, fontSize: isSmallScreen ? '10px !important' : '16px !important' }}>
+                            <Link href='/fatima' sx={{ fontSize: isSmallScreen ? '10px !important' : '16px !important' }}>
                                 Our Lady of Fatima
                             </Link>
                         </Typography>
                         <Typography>
-                            <Link href='/faust' sx={{ ...linkTextStyle, fontSize: isSmallScreen ? '10px !important' : '16px !important' }}>
+                            <Link href='/faust' sx={{ fontSize: isSmallScreen ? '10px !important' : '16px !important' }}>
                                 Sister Faustina
                             </Link>
                         </Typography>
