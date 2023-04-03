@@ -2,22 +2,22 @@ import React, { useContext, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { userContext } from '../context/AuthContext';
 import axios from 'axios';
-import { AppBar, Toolbar, Typography, Link, Menu, MenuItem, useMediaQuery, createTheme, ThemeProvider } from '@mui/material';
+import { AppBar, Toolbar, Typography, Link, Menu, MenuItem, useMediaQuery, createTheme, ThemeProvider, useTheme, } from '@mui/material';
 import SlowMotionVideoIcon from '@mui/icons-material/SlowMotionVideo';
 import LoginIcon from '@mui/icons-material/Login';
 import LogoutIcon from '@mui/icons-material/Logout';
 
+
 const Header = () => {
-    // const theme = useTheme();
-    // const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
-    const isSmallScreen = useMediaQuery('(max-width:375px)');
-    const theme = createTheme({
-        typography: {
-            body1: {
-                fontSize: isSmallScreen ? '8px' : '16px',
+    const theme = useTheme();
+
+    const isIphone3 = useMediaQuery(createTheme({
+        breakpoints: {
+            values: {
+                iphone3: 320,
             },
         },
-    });
+    }).breakpoints.down('iphone3'));
 
     const userObject = useContext(userContext);
     const navigate = useNavigate();
@@ -55,25 +55,25 @@ const Header = () => {
         <div style={{ height: 'auto' }}>
             <ThemeProvider theme={theme}>
                 <AppBar>
-                    <Toolbar sx={{ marginLeft: isSmallScreen ? '3px' : '5px', marginBottom: isSmallScreen ? '1px' : '10px' }} >
+                    <Toolbar sx={{ marginLeft: isIphone3 ? '3px' : '5px', marginBottom: isIphone3 ? '1px' : '10px' }} >
                         <SlowMotionVideoIcon sx={{ color: 'white' }} />
                         <Typography>
-                            <Link href='/' sx={{ color: 'white', textDecoration: 'none', '&:hover': { textDecoration: 'underline', marginLeft: '5px', fontSize: isSmallScreen ? '8px !important' : '16px !important' } }} >
+                            <Link href='/' sx={{ color: 'white', textDecoration: 'none', '&:hover': { textDecoration: 'underline', marginLeft: '5px', fontSize: isIphone3 ? '8px !important' : '16px !important' } }} >
                                 Catholic Prayers
                             </Link>
                         </Typography>
                         <Typography>
-                            <Link href='/prague' sx={{ color: 'white', textDecoration: 'none', '&:hover': { textDecoration: 'underline', marginLeft: '1px' } }} style={{ fontSize: isSmallScreen ? '10px !important' : '16px !important' }}>
+                            <Link href='/prague' sx={{ color: 'white', textDecoration: 'none', '&:hover': { textDecoration: 'underline', marginLeft: '1px' } }} style={{ fontSize: isIphone3 ? '10px !important' : '16px !important' }}>
                                 Infant Jesus
                             </Link>
                         </Typography>
                         <Typography>
-                            <Link href='/fatima' sx={{ fontSize: isSmallScreen ? '10px !important' : '16px !important' }}>
+                            <Link href='/fatima' sx={{ fontSize: isIphone3 ? '10px !important' : '16px !important' }}>
                                 Our Lady of Fatima
                             </Link>
                         </Typography>
                         <Typography>
-                            <Link href='/faust' sx={{ fontSize: isSmallScreen ? '10px !important' : '16px !important' }}>
+                            <Link href='/faust' sx={{ fontSize: isIphone3 ? '10px !important' : '16px !important' }}>
                                 Sister Faustina
                             </Link>
                         </Typography>
