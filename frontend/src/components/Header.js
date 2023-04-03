@@ -2,12 +2,15 @@ import React, { useContext, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { userContext } from '../context/AuthContext';
 import axios from 'axios';
-import { AppBar, Toolbar, Typography, Link, Menu, MenuItem } from '@mui/material';
+import { AppBar, Toolbar, Typography, Link, Menu, MenuItem, useMediaQuery, useTheme } from '@mui/material';
 import SlowMotionVideoIcon from '@mui/icons-material/SlowMotionVideo';
 import LoginIcon from '@mui/icons-material/Login';
 import LogoutIcon from '@mui/icons-material/Logout';
 
 const Header = () => {
+    const theme = useTheme();
+    const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
+
     const userObject = useContext(userContext);
     const navigate = useNavigate();
     const [anchorEl, setAnchorEl] = useState(null);
@@ -40,16 +43,24 @@ const Header = () => {
         navigate(route);
     }
 
+
     const linkTextStyle = {
         textDecoration: 'none',
         color: '#e3e3e3',
         marginLeft: '20px !important'
     };
 
+    const appBarStyle = {
+        marginLeft: isSmallScreen ? 1 : '5px',
+        marginBottom: isSmallScreen ? 1 : '10px',
+        backgroundColor: '#080957 !important',
+
+    }
+
     return (
         <div style={{ height: 'auto' }}>
-            <AppBar sx={{ marginBottom: '10px', backgroundColor: '#080957 !important' }}>
-                <Toolbar sx={{ marginRight: '5px !important' }} >
+            <AppBar sx={appBarStyle}>
+                <Toolbar  >
                     <SlowMotionVideoIcon sx={{ color: 'white !important' }} />
                     <Typography>
                         <Link href='/' sx={linkTextStyle}>Catholic Prayers</Link>
@@ -64,7 +75,7 @@ const Header = () => {
                         <Link href='/faust' sx={linkTextStyle}>Sister Faustina</Link>
                     </Typography>
                     {/* problem occurs here. 왜 MenuItem을 선택하면 header의 color가 바뀔까? */}
-                    <Typography sx={{ marginLeft: '20px !important', cursor: 'pointer', color: '#e3e3e3', }} onClick={handleMenuOpen}>
+                    <Typography sx={{ cursor: 'pointer', color: '#e3e3e3', }} onClick={handleMenuOpen}>
                         Rosary
                     </Typography>
                     <Menu
