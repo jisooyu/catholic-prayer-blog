@@ -64,7 +64,9 @@ const Header = () => {
                     <Toolbar sx={{ marginLeft: isSmallScreen ? '1px' : '5px', marginBottom: isSmallScreen ? '1px' : '10px' }} >
                         <SlowMotionVideoIcon sx={{ color: 'white !important' }} />
                         <Typography>
-                            <Link href='/' sx={linkTextStyle} style={{ fontSize: isSmallScreen ? '10px' : '16px' }}>Catholic Prayers</Link>
+                            <Link href='/' sx={{ color: 'white', textDecoration: 'none', '&:hover': { textDecoration: 'underline' } }} style={{ fontSize: isSmallScreen ? '10px !important' : '16px !important' }}>
+                                Catholic Prayers
+                            </Link>                     <Link href='/' sx={linkTextStyle} style={{ fontSize: isSmallScreen ? '10px' : '16px' }}>Catholic Prayers</Link>
                         </Typography>
                         <Typography>
                             <Link href='/prague' sx={linkTextStyle}>Infant Jesus</Link>
