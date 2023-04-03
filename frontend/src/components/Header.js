@@ -62,20 +62,26 @@ const Header = () => {
             <ThemeProvider theme={theme}>
                 <AppBar>
                     <Toolbar sx={{ marginLeft: isSmallScreen ? '1px' : '5px', marginBottom: isSmallScreen ? '1px' : '10px' }} >
-                        <SlowMotionVideoIcon sx={{ color: 'white !important' }} />
+                        <SlowMotionVideoIcon sx={{ color: 'white' }} />
                         <Typography>
                             <Link href='/' sx={{ color: 'white', textDecoration: 'none', '&:hover': { textDecoration: 'underline' } }} style={{ fontSize: isSmallScreen ? '10px !important' : '16px !important' }}>
                                 Catholic Prayers
-                            </Link>                     <Link href='/' sx={linkTextStyle} style={{ fontSize: isSmallScreen ? '10px' : '16px' }}>Catholic Prayers</Link>
+                            </Link>
                         </Typography>
                         <Typography>
-                            <Link href='/prague' sx={linkTextStyle}>Infant Jesus</Link>
+                            <Link href='/prague' sx={{ ...linkTextStyle, fontSize: isSmallScreen ? '10px !important' : '16px !important' }}>
+                                Infant Jesus
+                            </Link>
                         </Typography>
                         <Typography>
-                            <Link href='/fatima' sx={linkTextStyle}>Our Lady of Fatima</Link>
+                            <Link href='/fatima' sx={{ ...linkTextStyle, fontSize: isSmallScreen ? '10px !important' : '16px !important' }}>
+                                Our Lady of Fatima
+                            </Link>
                         </Typography>
                         <Typography>
-                            <Link href='/faust' sx={linkTextStyle}>Sister Faustina</Link>
+                            <Link href='/faust' sx={{ ...linkTextStyle, fontSize: isSmallScreen ? '10px !important' : '16px !important' }}>
+                                Sister Faustina
+                            </Link>
                         </Typography>
 
                         {/* problem occurs here. 왜 MenuItem을 선택하면 header의 color가 바뀔까? */}
