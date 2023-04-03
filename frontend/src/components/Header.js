@@ -51,11 +51,11 @@ const Header = () => {
         navigate(route);
     }
 
-    const linkTextStyle = {
-        textDecoration: 'none',
-        color: '#e3e3e3',
-        marginLeft: isSmallScreen ? '3px' : '20px !important'
-    };
+    // const linkTextStyle = {
+    //     textDecoration: 'none',
+    //     color: '#e3e3e3',
+    //     marginLeft: isSmallScreen ? '3px' : '20px !important'
+    // };
 
     return (
         <div style={{ height: 'auto' }}>
