@@ -10,7 +10,7 @@ import LogoutIcon from '@mui/icons-material/Logout';
 const Header = () => {
     // const theme = useTheme();
     // const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
-    const isSmallScreen = useMediaQuery('(max-width:76px)');
+    const isSmallScreen = useMediaQuery('(max-width:375px)');
     const theme = createTheme({
         typography: {
             body1: {
@@ -64,7 +64,7 @@ const Header = () => {
                     <Toolbar sx={{ marginLeft: isSmallScreen ? '1px' : '5px', marginBottom: isSmallScreen ? '1px' : '10px' }} >
                         <SlowMotionVideoIcon sx={{ color: 'white !important' }} />
                         <Typography>
-                            <Link href='/' sx={linkTextStyle}>Catholic Prayers</Link>
+                            <Link href='/' sx={linkTextStyle} style={{ fontSize: isSmallScreen ? '10px' : '16px' }}>Catholic Prayers</Link>
                         </Typography>
                         <Typography>
                             <Link href='/prague' sx={linkTextStyle}>Infant Jesus</Link>
