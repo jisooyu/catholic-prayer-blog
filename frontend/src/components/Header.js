@@ -68,7 +68,7 @@ const Header = () => {
         <div style={{ height: 'auto' }}>
             <ThemeProvider theme={theme}>
                 <AppBar sx={{ backgroundColor: '#9fd3c7 !important' }}>
-                    <Toolbar sx={{ marginLeft: isSmallScreen ? 1 : '5px', marginBottom: isSmallScreen ? 1 : '10px', }} >
+                    <Toolbar sx={{ marginLeft: isSmallScreen ? 1 : '5px', marginBottom: isSmallScreen ? 1 : '10px', backgroundColor: '#080957 !important' }} >
                         <SlowMotionVideoIcon sx={{ color: 'white !important' }} />
                         <Typography>
                             <Link href='/' sx={linkTextStyle}>Catholic Prayers</Link>
