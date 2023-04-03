@@ -8,8 +8,9 @@ import LoginIcon from '@mui/icons-material/Login';
 import LogoutIcon from '@mui/icons-material/Logout';
 
 const Header = () => {
-    const theme = useTheme();
-    const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
+    // const theme = useTheme();
+    // const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
+    const isSmallScreen = useMediaQuery('(max-width:375px)');
 
     const userObject = useContext(userContext);
     const navigate = useNavigate();
@@ -54,7 +55,7 @@ const Header = () => {
         marginLeft: isSmallScreen ? 1 : '5px',
         marginBottom: isSmallScreen ? 1 : '10px',
         backgroundColor: '#080957 !important',
-        fontSize: '10px',
+        fontSize: isSmallScreen ? '10px' : '12px',
     }
 
     return (
