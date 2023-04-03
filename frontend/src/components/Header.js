@@ -54,12 +54,11 @@ const Header = () => {
         marginLeft: isSmallScreen ? 1 : '5px',
         marginBottom: isSmallScreen ? 1 : '10px',
         backgroundColor: '#080957 !important',
-
     }
 
     return (
         <div style={{ height: 'auto' }}>
-            <AppBar sx={appBarStyle}>
+            <AppBar sx={{ backgroundColor: '#080957 !important' }}>
                 <Toolbar  >
                     <SlowMotionVideoIcon sx={{ color: 'white !important' }} />
                     <Typography>
