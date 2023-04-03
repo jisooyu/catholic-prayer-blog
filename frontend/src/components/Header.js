@@ -54,7 +54,7 @@ const Header = () => {
         marginLeft: isSmallScreen ? 1 : '5px',
         marginBottom: isSmallScreen ? 1 : '10px',
         backgroundColor: '#080957 !important',
-        fontSize: isSmallScreen ? '8px' : '12px',
+        fontSize: isSmallScreen ? '2px' : '12px',
     }
 
     return (
