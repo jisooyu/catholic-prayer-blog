@@ -50,7 +50,7 @@ const Header = () => {
         marginLeft: '20px !important'
     };
 
-    const appBarStyle = {
+    const toolbarStyle = {
         marginLeft: isSmallScreen ? 1 : '5px',
         marginBottom: isSmallScreen ? 1 : '10px',
         backgroundColor: '#080957 !important',
@@ -58,8 +58,8 @@ const Header = () => {
 
     return (
         <div style={{ height: 'auto' }}>
-            <AppBar sx={{ backgroundColor: '#080957 !important' }}>
-                <Toolbar sx={appBarStyle} >
+            <AppBar sx={{ backgroundColor: '#9fd3c7 !important' }}>
+                <Toolbar sx={toolbarStyle} >
                     <SlowMotionVideoIcon sx={{ color: 'white !important' }} />
                     <Typography>
                         <Link href='/' sx={linkTextStyle}>Catholic Prayers</Link>
