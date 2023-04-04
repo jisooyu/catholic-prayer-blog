@@ -19,9 +19,9 @@ const Prayer = ({ prayer }) => {
         marginLeft: isIphone13 ? '2em' : '5em',
         height: isIphone13 ? '80vh' : '35vh',
         paddingTop: isIphone13 ? '4em' : '1em',
-        overflow: 'scroll',
-        backgroundColor: "#ffcbcb"
+        overflow: 'scroll'
     };
+
     return (
         <Paper
             elevation={0}
