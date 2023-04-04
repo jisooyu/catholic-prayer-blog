@@ -1,19 +1,18 @@
 import React from 'react'
-import { Paper, useMediaQuery, useTheme } from '@mui/material'
+import { Paper, useMediaQuery } from '@mui/material'
 const PrePrayer = ({ prePrayer }) => {
-    const theme = useTheme();
-    const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
+    const isIphone13 = useMediaQuery('(max-width: 390px)');
 
     const paperStyle = {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'left',
         justifyContent: 'left',
-        width: isSmallScreen ? '75vw' : '60vw',
-        marginTop: isSmallScreen ? '2em' : '5em',
-        marginLeft: isSmallScreen ? 0 : '5em',
-        height: isSmallScreen ? '85vh' : '80vh',
-        paddingTop: isSmallScreen ? '2em' : '3em',
+        width: isIphone13 ? '75vw' : '60vw',
+        marginTop: isIphone13 ? '2em' : '5em',
+        marginLeft: isIphone13 ? 0 : '5em',
+        height: isIphone13 ? '85vh' : '80vh',
+        paddingTop: isIphone13 ? '5em' : '3em',
         overflow: 'scroll',
     };
     const prayerTitle = { textAlign: 'center', marginTop: '20px' }
