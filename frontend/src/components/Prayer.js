@@ -20,6 +20,7 @@ const Prayer = ({ prayer }) => {
         height: isIphone13 ? '80vh' : '35vh',
         paddingTop: isIphone13 ? '3em' : '1em',
         overflow: 'scroll',
+        background: isIphone13 ? "#f95959" : "#38598b"
     };
     return (
         <Paper
