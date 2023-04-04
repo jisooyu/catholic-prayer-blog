@@ -8,7 +8,7 @@ const PrePrayer = ({ prePrayer }) => {
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        width: isIphone13 ? '75vw' : '60vw',
+        width: isIphone13 ? '65vw' : '60vw',
         marginTop: isIphone13 ? '5em' : '5em',
         marginLeft: isIphone13 ? '3.5em' : '5em',
         height: isIphone13 ? '200vh' : '80vh',
