@@ -1,7 +1,7 @@
 import React from 'react'
 import { Paper, useMediaQuery } from '@mui/material'
 const PrePrayer = ({ prePrayer }) => {
-    const isIphone13 = useMediaQuery('(max-width: 350px)');
+    const isIphone13 = useMediaQuery('(max-width: 400px)');
 
     const paperStyle = {
         display: 'flex',

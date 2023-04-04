@@ -2,7 +2,7 @@ import * as React from 'react';
 import { styled, Grid, Paper, Typography, ButtonBase, useMediaQuery } from '@mui/material'
 
 const Prayer = ({ prayer }) => {
-    const isIphone13 = useMediaQuery('(max-width: 350px)');
+    const isIphone13 = useMediaQuery('(max-width: 400px)');
     const Img = styled('img')({
         margin: 'auto',
         display: 'block',
