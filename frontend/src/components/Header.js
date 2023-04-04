@@ -9,9 +9,10 @@ import LogoutIcon from '@mui/icons-material/Logout';
 
 
 const Header = () => {
-    // const theme = useTheme();
+    const theme = useTheme();
 
     // const isIphone13 = useMediaQuery(theme => theme.breakpoints.between('md', 'xl'));
+
     const isIphone13 = useMediaQuery('(max-width: 390px)');
     const typoStyle = { color: 'white', textDecoration: 'none', '&:hover': { textDecoration: 'underline', marginLeft: isIphone13 ? '2px' : '5px', fontSize: isIphone13 ? '8px' : '16px' } }
 
@@ -46,12 +47,17 @@ const Header = () => {
         handleMenuClose();
         navigate(route);
     }
-
+    const toolbarStyle = {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'left',
+        justifyContent: 'left',
+    }
     return (
         <div style={{ height: 'auto' }}>
             <ThemeProvider theme={theme}>
                 <AppBar>
-                    <Toolbar  >
+                    <Toolbar sx={toolbarStyle} >
                         <SlowMotionVideoIcon sx={{ color: 'white' }} />
                         <Typography>
                             <Link href='/' sx={typoStyle} >
