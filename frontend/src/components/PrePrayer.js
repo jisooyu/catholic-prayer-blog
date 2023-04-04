@@ -15,7 +15,7 @@ const PrePrayer = ({ prePrayer }) => {
         paddingTop: isIphone13 ? '4em' : '1em',
         overflow: 'scroll',
     };
-    const prayerTitle = { textAlign: 'center', marginTop: '5px' }
+    const prayerTitle = { textAlign: 'center', marginTop: '20px' }
     const repetitionStyle = { textAlign: 'center', fontWeight: 'bold', marginTop: '20px', marginRight: '30px' }
     const prayerStyle = { display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '5em', marginLeft: '5em', width: '80%' }
 
@@ -24,7 +24,7 @@ const PrePrayer = ({ prePrayer }) => {
             <>
                 <h2 style={{ textAlign: 'center', fontWeight: 'bold' }}>{prePrayer.title}</h2>
                 <h3 style={{ textAlign: 'center' }}>{prePrayer.trinity}</h3>
-                <p style={{ textAlign: 'center', marginTop: '20px' }}>{prePrayer.hailMary}</p>
+                <p style={{ textAlign: 'center', marginTop: '5px' }}>{prePrayer.hailMary}</p>
 
                 {/* 청원기도 */}
                 <h3 style={prayerTitle}>{prePrayer.petitionPrayerTitle}</h3>
