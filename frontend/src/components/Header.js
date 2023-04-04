@@ -45,29 +45,31 @@ const Header = () => {
         navigate(route);
     }
 
+    const typoStyle = { color: 'white', textDecoration: 'none', '&:hover': { textDecoration: 'underline', marginLeft: isIphone13 ? '2px' : '5px', fontSize: isIphone13 ? '8px' : '16px' } }
+
     return (
         <div style={{ height: 'auto' }}>
             <ThemeProvider theme={theme}>
                 <AppBar>
-                    <Toolbar sx={{ marginLeft: isIphone13 ? '3px' : '5px', marginBottom: isIphone13 ? '1px' : '10px' }} >
+                    <Toolbar  >
                         <SlowMotionVideoIcon sx={{ color: 'white' }} />
                         <Typography>
-                            <Link href='/' sx={{ color: 'white', textDecoration: 'none', '&:hover': { textDecoration: 'underline', marginLeft: isIphone13 ? '2px' : '5px', fontSize: isIphone13 ? '8px' : '16px' } }} >
+                            <Link href='/' sx={typoStyle} >
                                 Catholic Prayers
                             </Link>
                         </Typography>
                         <Typography>
-                            <Link href='/' sx={{ color: 'white', textDecoration: 'none', '&:hover': { textDecoration: 'underline', marginLeft: isIphone13 ? '2px' : '5px', fontSize: isIphone13 ? '8px' : '16px' } }} >
+                            <Link href='/' sx={typoStyle} >
                                 Infant Jesus
                             </Link>
                         </Typography>
                         <Typography>
-                            <Link href='/fatima' sx={{ fontSize: isIphone13 ? '10px !important' : '16px !important' }}>
+                            <Link href='/fatima' sx={typoStyle}>
                                 Our Lady of Fatima
                             </Link>
                         </Typography>
                         <Typography>
-                            <Link href='/faust' sx={{ fontSize: isIphone13 ? '10px !important' : '16px !important' }}>
+                            <Link href='/faust' sx={typoStyle}>
                                 Sister Faustina
                             </Link>
                         </Typography>
