@@ -15,9 +15,9 @@ const Prayer = ({ prayer }) => {
         alignItems: 'center',
         justifyContent: 'center',
         width: isIphone13 ? '82vw' : '40vw',
-        marginTop: isIphone13 ? '8em' : '1em',
+        marginTop: isIphone13 ? '4em' : '1em',
         marginLeft: isIphone13 ? '2em' : '5em',
-        height: isIphone13 ? '60vh' : '35vh',
+        height: isIphone13 ? '80vh' : '35vh',
         paddingTop: isIphone13 ? '3em' : '1em',
         overflow: 'scroll',
     };
