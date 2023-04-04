@@ -9,14 +9,14 @@ const PrePrayer = ({ prePrayer }) => {
         alignItems: 'center',
         justifyContent: 'center',
         width: isIphone13 ? '75vw' : '60vw',
-        marginTop: isIphone13 ? '8em' : '5em',
+        marginTop: isIphone13 ? '7em' : '5em',
         marginLeft: isIphone13 ? '1em' : '5em',
         height: isIphone13 ? '200vh' : '80vh',
         paddingTop: isIphone13 ? '4em' : '1em',
         overflow: 'scroll',
         backgroundColor: isIphone13 ? "#f95959" : "#38598b"
     };
-    const prayerTitle = { textAlign: 'center', marginTop: '20px' }
+    const prayerTitle = { textAlign: 'center' }
     const repetitionStyle = { textAlign: 'center', fontWeight: 'bold', marginTop: '20px', marginRight: '30px' }
     const prayerStyle = { display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '5em', marginLeft: '5em', width: '80%' }
 
