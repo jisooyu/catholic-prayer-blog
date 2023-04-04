@@ -14,6 +14,7 @@ const PrePrayer = ({ prePrayer }) => {
         height: isIphone13 ? '85vh' : '80vh',
         paddingTop: isIphone13 ? '8em' : '3em',
         overflow: 'scroll',
+        backgroundColor: isIphone13 ? "#f95959" : "#38598b"
     };
     const prayerTitle = { textAlign: 'center', marginTop: '20px' }
     const repetitionStyle = { textAlign: 'center', fontWeight: 'bold', marginTop: '20px', marginRight: '30px' }
