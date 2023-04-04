@@ -12,7 +12,7 @@ const PrePrayer = ({ prePrayer }) => {
         marginTop: isIphone13 ? '2em' : '5em',
         marginLeft: isIphone13 ? 0 : '5em',
         height: isIphone13 ? '85vh' : '80vh',
-        paddingTop: isIphone13 ? '5em' : '3em',
+        paddingTop: isIphone13 ? '8em' : '3em',
         overflow: 'scroll',
     };
     const prayerTitle = { textAlign: 'center', marginTop: '20px' }
