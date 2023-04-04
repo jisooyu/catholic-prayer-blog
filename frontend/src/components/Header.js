@@ -9,11 +9,8 @@ import LogoutIcon from '@mui/icons-material/Logout';
 
 
 const Header = () => {
-    // const theme = useTheme();
 
-    // const isIphone13 = useMediaQuery(theme => theme.breakpoints.between('md', 'xl'));
-
-    const isIphone13 = useMediaQuery('(max-width: 390px)');
+    const isIphone13 = useMediaQuery('(max-width: 400px)');
     const typoStyle = {
         color: 'white',
         textDecoration: 'none',
@@ -21,7 +18,7 @@ const Header = () => {
             textDecoration: 'underline',
             cursor: 'pointer'
         },
-        marginLeft: isIphone13 ? '2px' : '5px',
+        marginLeft: isIphone13 ? '2px' : '8px',
         fontSize: isIphone13 ? '14px' : '16px'
     }
 
