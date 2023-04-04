@@ -6,8 +6,8 @@ const PrePrayer = ({ prePrayer }) => {
     const paperStyle = {
         display: 'flex',
         flexDirection: 'column',
-        alignItems: 'left',
-        justifyContent: 'left',
+        alignItems: 'center',
+        justifyContent: 'center',
         width: isIphone13 ? '75vw' : '60vw',
         marginTop: isIphone13 ? '2em' : '5em',
         marginLeft: isIphone13 ? 0 : '5em',
