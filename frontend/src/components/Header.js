@@ -49,7 +49,7 @@ const Header = () => {
     }
     const toolbarStyle = {
         display: 'flex',
-        flexDirection: 'column',
+        // flexDirection: 'column',
         alignItems: 'left',
         justifyContent: 'left',
     }
