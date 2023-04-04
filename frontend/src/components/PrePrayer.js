@@ -12,7 +12,7 @@ const PrePrayer = ({ prePrayer }) => {
         marginTop: isIphone13 ? '4em' : '5em',
         marginLeft: isIphone13 ? '1em' : '5em',
         height: isIphone13 ? '120vh' : '80vh',
-        paddingTop: isIphone13 ? '3em' : '1em',
+        paddingTop: isIphone13 ? '10em' : '1em',
         overflow: 'scroll',
         backgroundColor: isIphone13 ? "#f95959" : "#38598b"
     };
