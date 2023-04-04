@@ -45,7 +45,7 @@ const Header = () => {
         navigate(route);
     }
 
-    const typoStyle = { color: 'white', textDecoration: 'none', '&:hover': { textDecoration: 'underline', marginLeft: isIphone13 ? '2px' : '5px', fontSize: isIphone13 ? '8px' : '16px' } }
+    const typoStyle = { color: 'white', textDecoration: 'none', '&:hover': { textDecoration: 'underline', marginLeft: isIphone13 ? '2px' : '5px', fontSize: '8px' } }
 
     return (
         <div style={{ height: 'auto' }}>
