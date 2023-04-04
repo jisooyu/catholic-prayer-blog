@@ -19,9 +19,10 @@ const Header = () => {
         textDecoration: 'none',
         '&:hover': {
             textDecoration: 'underline',
+            cursor: 'pointer'
         },
         marginLeft: isIphone13 ? '2px' : '5px',
-        fontSize: isIphone13 ? '8px' : '16px'
+        fontSize: isIphone13 ? '14px' : '16px'
     }
 
     const userObject = useContext(userContext);
@@ -89,7 +90,7 @@ const Header = () => {
                     </Typography>
 
                     {/* problem occurs here. 왜 MenuItem을 선택하면 header의 color가 바뀔까? */}
-                    <Typography sx={{ cursor: 'pointer', color: '#e3e3e3', }} onClick={handleMenuOpen}>
+                    <Typography sx={typoStyle} onClick={handleMenuOpen}>
                         Rosary
                     </Typography>
                     <Menu
@@ -111,7 +112,7 @@ const Header = () => {
                         >Glorious Mysteries</MenuItem>
                     </Menu>
 
-                    <Toolbar style={{ marginLeft: 'auto' }}>
+                    <Toolbar style={toolbarStyle}>
                         {userObject ? (
                             <div style={{
                                 display: 'flex',
@@ -119,7 +120,7 @@ const Header = () => {
                                 cursor: 'pointer'
                             }}>
                                 <LogoutIcon onClick={googleLogout} />
-                                <Typography onClick={googleLogout} variant='body1'>Logout</Typography>
+                                <Typography sx={typoStyle} onClick={googleLogout} variant='body1'>Logout</Typography>
                             </div>
                         ) : (
                             <div style={{
@@ -128,14 +129,14 @@ const Header = () => {
                                 cursor: 'pointer'
                             }}>
                                 <LoginIcon onClick={googleLogin} />
-                                <Typography onClick={googleLogin} variant='body1'>Google Login</Typography>
+                                <Typography sx={typoStyle} onClick={googleLogin} variant='body1'>Google Login</Typography>
                             </div>
                         )}
                     </Toolbar>
                 </Toolbar>
             </AppBar>
             {/* </ ThemeProvider> */}
-        </div>
+        </div >
     );
 }
 export default Header;
