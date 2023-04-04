@@ -10,11 +10,10 @@ const PrePrayer = ({ prePrayer }) => {
         justifyContent: 'center',
         width: isIphone13 ? '75vw' : '60vw',
         marginTop: isIphone13 ? '5em' : '5em',
-        marginLeft: isIphone13 ? '4em' : '5em',
+        marginLeft: isIphone13 ? '3.5em' : '5em',
         height: isIphone13 ? '200vh' : '80vh',
         paddingTop: isIphone13 ? '4em' : '1em',
         overflow: 'scroll',
-        backgroundColor: isIphone13 ? "#f95959" : "#38598b"
     };
     const prayerTitle = { textAlign: 'center' }
     const repetitionStyle = { textAlign: 'center', fontWeight: 'bold', marginTop: '20px', marginRight: '30px' }
