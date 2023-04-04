@@ -1,10 +1,8 @@
 import * as React from 'react';
-import { styled, Grid, Paper, Typography, ButtonBase, useMediaQuery, useTheme } from '@mui/material'
+import { styled, Grid, Paper, Typography, ButtonBase, useMediaQuery } from '@mui/material'
 
 const Prayer = ({ prayer }) => {
-    const theme = useTheme();
-    const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
-
+    const isIphone13 = useMediaQuery('(max-width: 390px)');
     const Img = styled('img')({
         margin: 'auto',
         display: 'block',
@@ -16,11 +14,11 @@ const Prayer = ({ prayer }) => {
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        width: isSmallScreen ? '82vw' : '40vw',
-        marginTop: isSmallScreen ? '2em' : '1em',
-        marginLeft: isSmallScreen ? '2em' : '5em',
-        height: isSmallScreen ? '60vh' : '35vh',
-        paddingTop: isSmallScreen ? '2em' : '1em',
+        width: isIphone13 ? '82vw' : '40vw',
+        marginTop: isIphone13 ? '3em' : '1em',
+        marginLeft: isIphone13 ? '2em' : '5em',
+        height: isIphone13 ? '30vh' : '35vh',
+        paddingTop: isIphone13 ? '2em' : '1em',
         overflow: 'scroll',
     };
     return (
