@@ -49,7 +49,7 @@ const Header = () => {
     }
     const toolbarStyle = {
         display: 'flex',
-        // flexDirection: 'column',
+        flexDirection: isIphone13 ? 'column' : 'row',
         alignItems: 'left',
         justifyContent: 'left',
     }
