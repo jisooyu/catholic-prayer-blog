@@ -24,7 +24,7 @@ const PrePrayer = ({ prePrayer }) => {
             <>
                 <h2 style={{ textAlign: 'center', fontWeight: 'bold' }}>{prePrayer.title}</h2>
                 <h3 style={{ textAlign: 'center' }}>{prePrayer.trinity}</h3>
-                <p style={{ textAlign: 'center', marginTop: '10px' }}>{prePrayer.hailMary}</p>
+                <p style={{ textAlign: 'center', marginTop: '20px' }}>{prePrayer.hailMary}</p>
 
                 {/* 청원기도 */}
                 <h3 style={prayerTitle}>{prePrayer.petitionPrayerTitle}</h3>
