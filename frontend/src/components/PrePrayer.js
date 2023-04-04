@@ -9,9 +9,9 @@ const PrePrayer = ({ prePrayer }) => {
         alignItems: 'center',
         justifyContent: 'center',
         width: isIphone13 ? '75vw' : '60vw',
-        marginTop: isIphone13 ? '2em' : '5em',
+        marginTop: isIphone13 ? '4em' : '5em',
         marginLeft: isIphone13 ? '1em' : '5em',
-        height: isIphone13 ? '90vh' : '80vh',
+        height: isIphone13 ? '120vh' : '80vh',
         paddingTop: isIphone13 ? '3em' : '1em',
         overflow: 'scroll',
         backgroundColor: isIphone13 ? "#f95959" : "#38598b"
