@@ -11,7 +11,7 @@ import LogoutIcon from '@mui/icons-material/Logout';
 const Header = () => {
     const theme = useTheme();
 
-    const isIphone13 = useMediaQuery(theme => theme.breakpoints.down('sm'));
+    const isIphone13 = useMediaQuery(theme => theme.breakpoints.between('md', 'xl'));
 
     const userObject = useContext(userContext);
     const navigate = useNavigate();
@@ -45,7 +45,7 @@ const Header = () => {
         navigate(route);
     }
 
-    const typoStyle = { color: 'white', textDecoration: 'none', '&:hover': { textDecoration: 'underline', marginLeft: isIphone13 ? '2px' : '5px', fontSize: '8px' } }
+    const typoStyle = { color: 'white', textDecoration: 'none', '&:hover': { textDecoration: 'underline', marginLeft: isIphone13 ? '2px' : '5px', fontSize: isIphone13 ? '8px' : '16px' } }
 
     return (
         <div style={{ height: 'auto' }}>
