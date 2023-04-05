@@ -17,7 +17,7 @@ const Faust = () => {
             overflow: 'scroll'
         }}>
             <CardHeader
-                sx={{ mt: isIphone13 ? 2 : 20 }}
+                sx={{ mt: isIphone13 ? 2 : 50 }}
                 title="Jesus, I trust in you."
                 subheader="1943"
             />
@@ -27,7 +27,6 @@ const Faust = () => {
                     width: isIphone13 ? 300 : 400
                 }}
                 component="img"
-                height="620"
                 image={`${process.env.PUBLIC_URL}/faust-jesus.jpeg`}
             />
             <CardContent >
