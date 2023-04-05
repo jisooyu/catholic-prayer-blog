@@ -6,6 +6,7 @@ const Faust = () => {
     return (
         <Card sx={{
             display: 'flex',
+            flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'center',
             marginTop: isIphone13 ? '5em' : '5em',
