@@ -30,7 +30,7 @@ const Faust = () => {
                 image={`${process.env.PUBLIC_URL}/faust-jesus.jpeg`}
             />
             <CardContent>
-                <Typography sx={{ mt: 5, ml: isIphone13 ? 2 : 10 }}>
+                <Typography sx={{ mt: isIphone13 ? 5 : 20, ml: isIphone13 ? 2 : 10 }}>
                     <h3>(시작 기도)</h3>
                     <h3>주님의 기도, 성모송, 사도신경</h3>
                     <h3>(5단 기도)</h3>
