@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, CardMedia, CardContent, CardHeader } from '@mui/material'
 
 const Fatima = () => {
-    console.log("Fatima is here.")
+
     return (
         <div style={{ marginTop: '70px', display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100vh' }}>
             <Card sx={{ maxWidth: 780 }}>
