@@ -30,11 +30,11 @@ const Faust = () => {
                 image={`${process.env.PUBLIC_URL}/faust-jesus.jpeg`}
             />
             <CardContent>
-                <Typography sx={{ mt: 5, ml: 10 }}>
+                <Typography sx={{ mt: 5, ml: isIphone13 ? 2 : 10 }}>
                     <h3>(시작 기도)</h3>
                     <h3>주님의 기도, 성모송, 사도신경</h3>
                     <h3>(5단 기도)</h3>
-                    <Typography sx={{ ml: 3 }}>
+                    <Typography sx={{ ml: isIphone13 ? 3 : 5 }}>
                         <h3>(시작 1회, 기도 10회  반복)</h3>
                         <p>(시작)</p>
                         <p>"영원하신 아버지, 저희가 지은 죄와 온 세상의 죄를 보속하는 마음으로 지극히 사랑하시는 당신 아들 우리 주 예수 그리스도의 몸과 피 영혼과 신성을 바치나이다."</p>
