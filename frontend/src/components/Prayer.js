@@ -14,10 +14,10 @@ const Prayer = ({ prayer }) => {
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        width: isIphone13 ? '82vw' : '50vw',
         marginTop: isIphone13 ? '4em' : '2em',
         marginLeft: isIphone13 ? '2em' : '5em',
         height: isIphone13 ? '80vh' : '35vh',
+        width: isIphone13 ? '82vw' : '50vw',
         paddingTop: isIphone13 ? '5em' : '1em',
         overflow: 'scroll'
     };
