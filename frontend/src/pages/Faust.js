@@ -22,7 +22,7 @@ const Faust = () => {
             <CardMedia
                 sx={{
                     height: isIphone13 ? 600 : 1400,
-                    width: isIphone13 ? 300 : 600
+                    width: isIphone13 ? 300 : 400
                 }}
                 component="img"
                 height="620"
