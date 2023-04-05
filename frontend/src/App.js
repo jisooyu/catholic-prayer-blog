@@ -8,8 +8,9 @@ import Faust from './pages/Faust'
 import Joyful from './pages/Joyful'
 import Luminous from './pages/Luminous'
 import Sorrowful from './pages/Sorrowful'
+import Glorious from './pages/Glorious'
 import {
-  joyfulPrayers, joyfulPrePrayer, luminousPrayers, luminousPrePrayer, sorrowfulPrayers
+  joyfulPrayers, joyfulPrePrayer, luminousPrayers, luminousPrePrayer, sorrowfulPrePrayer, sorrowfulPrayers, gloriousPrePrayer, gloriusPrayers
 } from './prayers/prayers';
 
 const App = () => {
@@ -37,7 +38,13 @@ const App = () => {
           <Route
             path="/sorrowful"
             element={
-              <Sorrowful prayers={sorrowfulPrayers} />
+              <Sorrowful prayers={sorrowfulPrayers} prePrayer={sorrowfulPrePrayer} />
+            }
+          />
+          <Route
+            path="/glorious"
+            element={
+              <Glorious prayers={gloriusPrayers} prePrayer={gloriousPrePrayer} />
             }
           />
         </Routes>

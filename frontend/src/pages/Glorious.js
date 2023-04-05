@@ -1,11 +1,11 @@
 import React from 'react';
 import CarouselComponent from '../components/CarouselComponent'
 
-const Sorrowful = ({ prayers, prePrayer }) => {
+const Glorious = ({ prayers, prePrayer }) => {
 
     return (
         <CarouselComponent prayers={prayers} prePrayer={prePrayer} />
     )
 };
 
-export default Sorrowful;
+export default Glorious;
