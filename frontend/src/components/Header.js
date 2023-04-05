@@ -7,9 +7,7 @@ import SlowMotionVideoIcon from '@mui/icons-material/SlowMotionVideo';
 import LoginIcon from '@mui/icons-material/Login';
 import LogoutIcon from '@mui/icons-material/Logout';
 
-
 const Header = () => {
-
     const isIphone13 = useMediaQuery('(max-width: 400px)');
     const typoStyle = {
         color: 'white',
@@ -61,7 +59,6 @@ const Header = () => {
     }
     return (
         <div style={{ height: 'auto' }}>
-            {/* <ThemeProvider theme={theme}> */}
             <AppBar>
                 <Toolbar sx={toolbarStyle} >
                     <SlowMotionVideoIcon sx={{ color: 'white' }} />
@@ -132,7 +129,6 @@ const Header = () => {
                     </Toolbar>
                 </Toolbar>
             </AppBar>
-            {/* </ ThemeProvider> */}
         </div >
     );
 }
