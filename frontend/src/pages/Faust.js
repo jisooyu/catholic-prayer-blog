@@ -9,7 +9,7 @@ const Faust = () => {
             flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'center',
-            marginTop: isIphone13 ? '4em' : '5em',
+            marginTop: isIphone13 ? '4em' : '8em',
             marginLeft: isIphone13 ? '1em' : '5em',
             height: isIphone13 ? '200vh' : '83vh',
             width: isIphone13 ? '82vw' : '60vw',
@@ -22,7 +22,7 @@ const Faust = () => {
             />
             <CardMedia
                 sx={{
-                    height: isIphone13 ? 600 : 1500,
+                    height: isIphone13 ? 600 : 900,
                     width: isIphone13 ? 300 : 400
                 }}
                 component="img"
