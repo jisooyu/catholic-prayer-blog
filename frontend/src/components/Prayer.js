@@ -18,7 +18,7 @@ const Prayer = ({ prayer }) => {
         marginLeft: isIphone13 ? '2em' : '5em',
         height: isIphone13 ? '80vh' : '35vh',
         width: isIphone13 ? '82vw' : '50vw',
-        paddingTop: isIphone13 ? '5em' : '1em',
+        paddingTop: isIphone13 ? '4em' : '1em',
         overflow: 'scroll'
     };
 
