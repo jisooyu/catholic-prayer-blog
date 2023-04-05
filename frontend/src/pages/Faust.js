@@ -12,7 +12,7 @@ const Faust = () => {
             marginTop: isIphone13 ? '4em' : '12em',
             marginLeft: isIphone13 ? '1em' : '5em',
             height: isIphone13 ? '200vh' : '83vh',
-            width: isIphone13 ? '82vw' : '60vw',
+            width: isIphone13 ? '82vw' : '50vw',
             paddingTop: isIphone13 ? '4em' : '1em',
             overflow: 'scroll'
         }}>
