@@ -9,8 +9,8 @@ const Faust = () => {
             flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'center',
-            marginTop: isIphone13 ? '5em' : '5em',
-            marginLeft: isIphone13 ? '3.5em' : '5em',
+            marginTop: isIphone13 ? '4em' : '5em',
+            marginLeft: isIphone13 ? '1em' : '5em',
             height: isIphone13 ? '200vh' : '80vh',
             paddingTop: isIphone13 ? '4em' : '1em',
             overflow: 'scroll'
@@ -20,6 +20,10 @@ const Faust = () => {
                 subheader="1943"
             />
             <CardMedia
+                sx={{
+                    height: isIphone13 ? 200 : 400,
+                    width: isIphone13 ? 300 : 600
+                }}
                 component="img"
                 height="620"
                 image={`${process.env.PUBLIC_URL}/faust-jesus.jpeg`}
