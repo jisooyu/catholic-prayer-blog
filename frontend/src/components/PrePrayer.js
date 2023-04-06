@@ -23,7 +23,7 @@ const PrePrayer = ({ prePrayer }) => {
 
     return (
         <Paper elevation={0} sx={paperStyle} >
-            <div style={{ margin: 'auto' }}>
+            <>
                 <h2 style={{ textAlign: 'center', fontWeight: 'bold' }}>{prePrayer.title}</h2>
                 <h3 style={{ textAlign: 'center', fontWeight: 'bold' }}>{prePrayer.trinity}</h3>
                 <p style={{ textAlign: 'center', marginTop: '5px' }}>{prePrayer.hailMary}</p>
@@ -39,7 +39,7 @@ const PrePrayer = ({ prePrayer }) => {
                     <p style={{ marginTop: '20px', textAlign: 'center' }}>{prePrayer.thanksgivingPrayer}</p>
                 </div>
                 <h5 style={repetitionStyle}>{prePrayer.repititionTwo}</h5>
-            </div>
+            </>
         </Paper >
     )
 }
