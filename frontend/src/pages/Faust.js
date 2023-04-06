@@ -12,7 +12,7 @@ const Faust = () => {
             marginTop: isIphone13 ? '4em' : '12em',
             marginLeft: isIphone13 ? '1em' : '5em',
             height: isIphone13 ? '200vh' : '83vh',
-            width: isIphone13 ? '82vw' : '50vw',
+            width: isIphone13 ? '82vw' : '65vw',
             paddingTop: isIphone13 ? '4em' : '1em',
             overflow: 'scroll'
         }}>
@@ -30,7 +30,7 @@ const Faust = () => {
                 image={`${process.env.PUBLIC_URL}/faust-jesus.jpeg`}
             />
             <CardContent >
-                <Typography sx={{ mt: 5, ml: 2 }}>
+                <Typography sx={{ mx: "auto" }}>
                     <h3>(시작 기도)</h3>
                     <h3>주님의 기도, 성모송, 사도신경</h3>
                     <h3>(5단 기도)</h3>
