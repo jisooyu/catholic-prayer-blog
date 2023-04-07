@@ -1,9 +1,9 @@
 import React from 'react';
 import CarouselComponent from '../components/CarouselComponent'
 
-const Joyful = ({ prayers, prePrayer }) => {
+const Joyful = ({ prePrayer, prayers }) => {
     return (
-        <CarouselComponent prayers={prayers} prePrayer={prePrayer} />
+        <CarouselComponent prePrayer={prePrayer} prayers={prayers} />
     )
 };
 

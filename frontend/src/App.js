@@ -26,25 +26,25 @@ const App = () => {
           <Route
             path="/joyful"
             element={
-              <Joyful prayers={joyfulPrayers} prePrayer={joyfulPrePrayer} />
+              <Joyful prePrayer={joyfulPrePrayer} prayers={joyfulPrayers} />
             }
           />
           <Route
             path="/luminous"
             element={
-              <Luminous prayers={luminousPrayers} prePrayer={luminousPrePrayer} />
+              <Luminous prePrayer={luminousPrePrayer} prayers={luminousPrayers} />
             }
           />
           <Route
             path="/sorrowful"
             element={
-              <Sorrowful prayers={sorrowfulPrayers} prePrayer={sorrowfulPrePrayer} />
+              <Sorrowful prePrayer={sorrowfulPrePrayer} prayers={sorrowfulPrayers} />
             }
           />
           <Route
             path="/glorious"
             element={
-              <Glorious prayers={gloriusPrayers} prePrayer={gloriousPrePrayer} />
+              <Glorious prePrayer={gloriousPrePrayer} prayers={gloriusPrayers} />
             }
           />
         </Routes>

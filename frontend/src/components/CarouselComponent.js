@@ -2,7 +2,7 @@ import Carousel from 'react-material-ui-carousel'
 import Prayer from './Prayer';
 import PrePrayer from './PrePrayer';
 
-const CarouselComponent = ({ prayers, prePrayer }) => {
+const CarouselComponent = ({ prePrayer, prayers }) => {
     return (
         <Carousel
             animation="fade"
@@ -18,6 +18,7 @@ const CarouselComponent = ({ prayers, prePrayer }) => {
             {prayers.map((prayer, id) => (
                 <Prayer key={id} prayer={prayer} />
             ))}
+            {/* 여기에 PostPrayer ? */}
         </Carousel>
     )
 }
