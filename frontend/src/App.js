@@ -10,7 +10,7 @@ import Luminous from './pages/Luminous'
 import Sorrowful from './pages/Sorrowful'
 import Glorious from './pages/Glorious'
 import {
-  joyfulPrayers, joyfulPrePrayer, luminousPrayers, luminousPrePrayer, sorrowfulPrePrayer, sorrowfulPrayers, gloriousPrePrayer, gloriusPrayers
+  joyfulPrayers, joyfulPrePrayer, luminousPrayers, luminousPrePrayer, sorrowfulPrePrayer, sorrowfulPrayers, gloriousPrePrayer, gloriusPrayers, postPrayers
 } from './prayers/prayers';
 
 const App = () => {
@@ -26,25 +26,25 @@ const App = () => {
           <Route
             path="/joyful"
             element={
-              <Joyful prePrayer={joyfulPrePrayer} prayers={joyfulPrayers} />
+              <Joyful prePrayer={joyfulPrePrayer} prayers={joyfulPrayers} postPrayers={postPrayers} />
             }
           />
           <Route
             path="/luminous"
             element={
-              <Luminous prePrayer={luminousPrePrayer} prayers={luminousPrayers} />
+              <Luminous prePrayer={luminousPrePrayer} prayers={luminousPrayers} postPrayers={postPrayers} />
             }
           />
           <Route
             path="/sorrowful"
             element={
-              <Sorrowful prePrayer={sorrowfulPrePrayer} prayers={sorrowfulPrayers} />
+              <Sorrowful prePrayer={sorrowfulPrePrayer} prayers={sorrowfulPrayers} postPrayers={postPrayers} />
             }
           />
           <Route
             path="/glorious"
             element={
-              <Glorious prePrayer={gloriousPrePrayer} prayers={gloriusPrayers} />
+              <Glorious prePrayer={gloriousPrePrayer} prayers={gloriusPrayers} postPrayers={postPrayers} />
             }
           />
         </Routes>
