@@ -240,7 +240,7 @@ export const gloriusPrayers = [
     },
 ]
 
-export const postPryaers = [
+export const postPrayers = [
     {
         id: 1,
         title: "신령성체의 기도",

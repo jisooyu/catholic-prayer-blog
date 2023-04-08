@@ -1,14 +1,8 @@
 import * as React from 'react';
-import { styled, Grid, Paper, Typography, useMediaQuery } from '@mui/material'
+import { Grid, Paper, Typography, useMediaQuery } from '@mui/material'
 
 const PostPrayer = ({ postPrayer }) => {
     const isIphone13 = useMediaQuery('(max-width: 400px)');
-    const Img = styled('img')({
-        margin: 'auto',
-        display: 'block',
-        maxWidth: '100%',
-        maxHeight: '100%',
-    });
     const paperStyle = {
         display: 'flex',
         flexDirection: 'column',
