@@ -25,16 +25,14 @@ const PostPrayer = ({ postPrayer }) => {
                 <Grid item xs={12} sm container>
                     <Grid item xs container direction="column" spacing={2}>
                         <Grid item xs>
-                            <Typography gutterBottom variant="subtitle1" component="div">
+                            <Typography gutterBottom variant="title1" component="div">
                                 {postPrayer.title}
                             </Typography>
                             <Typography variant="body2" gutterBottom>
                                 {postPrayer.content}
                             </Typography>
-                        </Grid>
-                        <Grid item>
-                            <Typography sx={{ cursor: 'pointer' }} variant="body2">
-                                {postPrayer.repeat}
+                            <Typography variant="title1" gutterBottom>
+                                {postPrayer.ending}
                             </Typography>
                         </Grid>
                     </Grid>
