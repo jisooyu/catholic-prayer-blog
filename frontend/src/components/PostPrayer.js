@@ -24,14 +24,14 @@ const PostPrayer = ({ postPrayer }) => {
             <Grid container spacing={2}>
                 <Grid item xs={12} sm container>
                     <Grid item xs container direction="column" spacing={2}>
-                        <Grid item xs sx={{ display: "flex", alignItems: "center", justifyContent: "center", height: "100vh" }}>
-                            <Typography gutterBottom variant="h2" component="div" style={{ textAlign: "center" }}>
+                        <Grid item xs sx={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", height: "100vh" }}>
+                            <Typography gutterBottom variant="h3" component="div" style={{ textAlign: "center" }}>
                                 {postPrayer.title}
                             </Typography>
                             <Typography variant="subtitle1" gutterBottom>
                                 {postPrayer.content}
                             </Typography>
-                            <Typography variant="h2" gutterBottom style={{ textAlign: "center" }}>
+                            <Typography variant="h4" gutterBottom style={{ textAlign: "center" }}>
                                 {postPrayer.ending}
                             </Typography>
                         </Grid>
