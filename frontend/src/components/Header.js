@@ -68,7 +68,7 @@ const Header = () => {
                         </Link>
                     </Typography>
                     <Typography>
-                        <Link href='/' sx={typoStyle} >
+                        <Link href='/prague' sx={typoStyle} >
                             Infant Jesus
                         </Link>
                     </Typography>
