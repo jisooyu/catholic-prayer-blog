@@ -32,13 +32,13 @@ const PrePrayer = ({ prePrayer }) => {
                 <div style={prayerStyle}>
                     <p style={{ marginTop: '20px', textAlign: 'center', }}>{prePrayer.petitionPrayer}</p>
                 </div>
-                <h5 style={repetitionStyle}>{prePrayer.repititionOne}</h5>
+                <h3 style={repetitionStyle}>{prePrayer.repititionOne}</h3>
                 {/* 감사기도 */}
                 <h3 style={prayerTitle}>{prePrayer.thanksgivingPrayerTitle}</h3>
                 <div style={prayerStyle}>
                     <p style={{ marginTop: '20px', textAlign: 'center' }}>{prePrayer.thanksgivingPrayer}</p>
                 </div>
-                <h5 style={repetitionStyle}>{prePrayer.repititionTwo}</h5>
+                <h3 style={repetitionStyle}>{prePrayer.repititionTwo}</h3>
             </>
         </Paper >
     )
