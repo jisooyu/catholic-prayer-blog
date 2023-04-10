@@ -4,8 +4,8 @@ import { Card, CardMedia, CardContent, CardHeader, Typography, useMediaQuery } f
 const Prague = () => {
     const isIphone13 = useMediaQuery('(max-width: 400px)');
     return (
-        <div style={{ marginTop: '20em', display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100vh' }}>
-            <Card sx={{ maxWidth: isIphone13 ? '40vw' : '60vw' }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100vh' }}>
+            <Card sx={{ maxWidth: isIphone13 ? '70vw' : '60vw' }}>
                 <CardHeader
                     title="Infant Jesus"
                     subheader="1637"
