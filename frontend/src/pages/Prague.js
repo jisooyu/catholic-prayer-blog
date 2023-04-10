@@ -3,6 +3,8 @@ import { Card, CardMedia, CardContent, CardHeader, Typography, useMediaQuery } f
 
 const Prague = () => {
     const isIphone13 = useMediaQuery('(max-width: 400px)');
+    const imgWidth = isIphone13 ? 150 : 400;
+    const imgHeight = isIphone13 ? 150 : 400;
     return (
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100vh' }}>
             <Card sx={{ maxWidth: isIphone13 ? '70vw' : '60vw' }}>
@@ -12,7 +14,7 @@ const Prague = () => {
                 />
                 <CardMedia
                     component="img"
-                    sx={{ width: 400, height: 400 }}
+                    sx={{ width: imgWidth, height: imgHeight }}
                     image={`${process.env.PUBLIC_URL}/infant-jesus-prague.jpeg`}
                 />
                 <CardContent>
