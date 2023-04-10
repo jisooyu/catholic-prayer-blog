@@ -6,7 +6,7 @@ const Prague = () => {
     const imgWidth = isIphone13 ? 150 : 400;
     const imgHeight = isIphone13 ? 150 : 400;
     return (
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100vh' }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: isIphone13 ? '130vh' : '100vh' }}>
             <Card sx={{ maxWidth: isIphone13 ? '70vw' : '60vw' }}>
                 <CardHeader
                     title="Infant Jesus"
@@ -14,7 +14,7 @@ const Prague = () => {
                 />
                 <CardMedia
                     component="img"
-                    sx={{ width: imgWidth, height: imgHeight, margin: 'auto' }}
+                    sx={{ width: imgWidth, height: imgHeight }}
                     image={`${process.env.PUBLIC_URL}/infant-jesus-prague.jpeg`}
                 />
                 <CardContent>
