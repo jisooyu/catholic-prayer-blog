@@ -12,7 +12,7 @@ const Prague = () => {
                 />
                 <CardMedia
                     component="img"
-                    height={300}
+                    height={700}
                     image={`${process.env.PUBLIC_URL}/infant-jesus-prague.jpeg`}
                 />
                 <CardContent>
