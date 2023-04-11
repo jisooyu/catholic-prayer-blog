@@ -10,7 +10,7 @@ const PostPrayer = ({ postPrayer }) => {
         justifyContent: 'center',
         marginTop: isIphone13 ? '4em' : '3em',
         marginLeft: isIphone13 ? '2em' : '5em',
-        height: isIphone13 ? '80vh' : '35vh',
+        height: isIphone13 ? '150vh' : '35vh',
         width: isIphone13 ? '82vw' : '50vw',
         paddingTop: isIphone13 ? '4em' : '1em',
         overflow: 'scroll'
@@ -18,24 +18,24 @@ const PostPrayer = ({ postPrayer }) => {
     const gridStyle = {
         height: isIphone13 ? '80vh' : '35vh',
         width: isIphone13 ? '60vw' : '40vw',
-        backgroundColor: 'red'
+        backgroundColor: 'red',
     }
 
     return (
         <Paper elevation={0} sx={paperStyle}>
             <Grid container spacing={0.5} sx={gridStyle} direction="column">
                 <Grid item xs container direction="column" >
-                    <Typography variant="h5" component="div" style={{ textAlign: "center", marginBottom: '-0.25em' }}>
+                    <Typography variant="h5" component="div" style={{ textAlign: "center" }}>
                         {postPrayer.title}
                     </Typography>
                 </Grid>
-                <Grid item xs container direction="column" style={{ textAlign: "left", padding: "1em", marginTop: '-2em', marginBottom: '-2em' }}>
-                    <Typography variant="subtitle1"  >
+                <Grid item xs container direction="column" style={{ textAlign: "left", padding: "1em", }}>
+                    <Typography variant="subtitle1" style={{ marginTop: '-2em', marginBottom: '-1em' }} >
                         {postPrayer.content}
                     </Typography>
                 </Grid>
                 <Grid item xs container direction="column" >
-                    <Typography variant="h6" style={{ textAlign: "center", marginTop: '-2em', marginBottom: '-2em' }}>
+                    <Typography variant="h6" style={{ textAlign: "center" }}>
                         {postPrayer.ending}
                     </Typography>
                 </Grid>
