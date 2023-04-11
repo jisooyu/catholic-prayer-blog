@@ -31,7 +31,7 @@ const PostPrayer = ({ postPrayer }) => {
                     </Typography>
                 </Grid>
                 <Grid item xs container direction="column" spacing={0.5}>
-                    <Typography variant="subtitle1" style={{ textAlign: "left" }} >
+                    <Typography variant="subtitle1" style={{ textAlign: "left", margin: "0 2 0 2" }} >
                         {postPrayer.content}
                     </Typography>
                 </Grid>
