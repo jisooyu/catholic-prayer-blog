@@ -55,7 +55,7 @@ const Header = () => {
         display: 'flex',
         flexDirection: isIphone13 ? 'column' : 'row',
         alignItems: 'left',
-        justifyContent: 'left',
+        justifyContent: 'space-evenly',
     }
     return (
         <div style={{ height: 'auto' }}>
@@ -110,7 +110,6 @@ const Header = () => {
                         {userObject ? (
                             <div style={{
                                 display: 'flex',
-                                alignItems: 'right',
                                 cursor: 'pointer'
                             }}>
                                 <LogoutIcon onClick={googleLogout} />
@@ -119,7 +118,6 @@ const Header = () => {
                         ) : (
                             <div style={{
                                 display: 'flex',
-                                alignItems: 'right',
                                 cursor: 'pointer'
                             }}>
                                 <LoginIcon onClick={googleLogin} />
