@@ -24,26 +24,23 @@ const PostPrayer = ({ postPrayer }) => {
     return (
         <Paper elevation={0} sx={paperStyle}>
             <Grid container spacing={0.5} sx={gridStyle} direction="column">
-                {/* <Grid item xs container direction="column" spacing={0.5}> */}
                 <Grid item xs container direction="column" >
-                    <Typography variant="h5" component="div" style={{ textAlign: "center" }}>
+                    <Typography variant="h5" component="div" style={{ textAlign: "center", marginTop: '-0.25em', marginBottom: '-0.25em' }}>
                         {postPrayer.title}
                     </Typography>
                 </Grid>
-                <Grid item xs container direction="column" style={{ textAlign: "left", padding: "1em" }}>
+                <Grid item xs container direction="column" style={{ textAlign: "left", padding: "1em", marginTop: '-0.25em', marginBottom: '-0.25em' }}>
                     <Typography variant="subtitle1"  >
                         {postPrayer.content}
                     </Typography>
                 </Grid>
                 <Grid item xs container direction="column" >
-                    <Typography variant="h6" style={{ textAlign: "center" }}>
+                    <Typography variant="h6" style={{ textAlign: "center", marginTop: '-0.25em', marginBottom: '-0.25em' }}>
                         {postPrayer.ending}
                     </Typography>
                 </Grid>
-                {/* </Grid> */}
-
             </Grid>
-        </Paper>
+        </Paper >
     );
 }
 
