@@ -21,10 +21,10 @@ const PostPrayer = ({ postPrayer }) => {
             elevation={0}
             sx={paperStyle}
         >
-            <Grid container spacing={2}>
+            <Grid container spacing={1}>
                 <Grid item xs={12} sm container>
                     <Grid item xs container direction="column" spacing={2}>
-                        <Grid item xs sx={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", height: "100vh" }}>
+                        <Grid item xs sx={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", height: "110vh" }}>
                             <Typography gutterBottom variant="h5" component="div" style={{ textAlign: "center" }}>
                                 {postPrayer.title}
                             </Typography>
