@@ -18,24 +18,25 @@ const PostPrayer = ({ postPrayer }) => {
     const gridStyle = {
         height: isIphone13 ? '90vh' : '35vh',
         width: isIphone13 ? '90vw' : '40vw',
-        backgroundColor: 'red',
-        marginBottom: '-2em'
+        backgroundColor: 'red'
     }
-
+    const gridItemStyle = {
+        sx: { marginTop: '-0.5em', marginBottom: '-0.5em' }
+    };
     return (
         <Paper elevation={0} sx={paperStyle}>
             <Grid container spacing={0.5} sx={gridStyle} direction="column">
-                <Grid item xs container direction="column" >
+                <Grid item xs container direction="column" {...gridItemStyle}>
                     <Typography variant="h5" component="div" style={{ textAlign: "center" }}>
                         {postPrayer.title}
                     </Typography>
                 </Grid>
-                <Grid item xs container direction="column" style={{ textAlign: "left", padding: "1em", }}>
+                <Grid item xs container direction="column" style={{ textAlign: "left", padding: "1em", }}{...gridItemStyle}>
                     <Typography variant="subtitle1" style={{ marginTop: '-2em', marginBottom: '-1em' }} >
                         {postPrayer.content}
                     </Typography>
                 </Grid>
-                <Grid item xs container direction="column" >
+                <Grid item xs container direction="column" {...gridItemStyle}>
                     <Typography variant="h6" style={{ textAlign: "center" }}>
                         {postPrayer.ending}
                     </Typography>
