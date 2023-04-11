@@ -16,7 +16,7 @@ const PostPrayer = ({ postPrayer }) => {
         overflow: 'scroll'
     };
     const gridStyle = {
-        height: isIphone13 ? '60vh' : '35vh',
+        height: isIphone13 ? '80vh' : '35vh',
     }
 
     return (
@@ -27,13 +27,13 @@ const PostPrayer = ({ postPrayer }) => {
             <Grid container spacing={1}>
                 <Grid item xs container direction="column" spacing={1}>
                     <Grid item xs sx={gridStyle}>
-                        <Typography gutterBottom variant="h5" component="div" style={{ textAlign: "center" }}>
+                        <Typography gutterBottom variant="h5" component="div" style={{ textAlign: "left" }}>
                             {postPrayer.title}
                         </Typography>
                         <Typography variant="subtitle1" gutterBottom>
                             {postPrayer.content}
                         </Typography>
-                        <Typography variant="h6" gutterBottom style={{ textAlign: "center" }}>
+                        <Typography variant="h6" gutterBottom style={{ textAlign: "left" }}>
                             {postPrayer.ending}
                         </Typography>
                     </Grid>
