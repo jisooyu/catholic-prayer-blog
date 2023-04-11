@@ -9,7 +9,7 @@ const Fatima = () => {
             flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'center',
-            marginTop: isIphone13 ? '4em' : '10em',
+            marginTop: isIphone13 ? '4em' : '8em',
             marginLeft: isIphone13 ? '2em' : '5em',
             height: isIphone13 ? '210vh' : '83vh',
             width: isIphone13 ? '82vw' : '65vw',
@@ -17,7 +17,7 @@ const Fatima = () => {
             overflow: 'scroll'
         }}>
             <CardHeader
-                sx={{ mt: isIphone13 ? 2 : 50 }}
+                sx={{ mt: isIphone13 ? 5 : 50 }}
                 title="Our Lady of the Rosary"
                 subheader="1917"
             />
