@@ -17,25 +17,25 @@ const PostPrayer = ({ postPrayer }) => {
         overflow: 'scroll'
     };
 
-    const gridStyle = {
-        height: isIphone13 ? '60vh' : '20vh',
-        backgroundColor: 'red',
+    const gridContainerStyle = {
+        justifyContent: 'center',
+        spacing: isIphone13 ? 1 : 3,
     };
 
     return (
         <Paper elevation={0} sx={paperStyle}>
-            <Grid container spacing={1}>
-                <Grid item xs={12} sm={4} textAlign="center">
+            <Grid container sx={gridContainerStyle}>
+                <Grid item xs={12} sm={4}>
                     <Typography variant="h5" component="div">
                         {postPrayer.title}
                     </Typography>
                 </Grid>
-                <Grid item xs={12} sm={4} textAlign="center">
+                <Grid item xs={12} sm={4}>
                     <Typography variant="subtitle1">
                         {postPrayer.content}
                     </Typography>
                 </Grid>
-                <Grid item xs={12} sm={4} textAlign="center">
+                <Grid item xs={12} sm={4}>
                     <Typography variant="h6">
                         {postPrayer.ending}
                     </Typography>
