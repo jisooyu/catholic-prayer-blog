@@ -19,13 +19,14 @@ const PostPrayer = ({ postPrayer }) => {
         height: isIphone13 ? '90vh' : '35vh',
         width: isIphone13 ? '90vw' : '40vw',
         backgroundColor: 'red',
+        marginBottom: '-2em'
     }
 
     return (
         <Paper elevation={0} sx={paperStyle}>
             <Grid container spacing={0.5} sx={gridStyle} direction="column">
                 <Grid item xs container direction="column" >
-                    <Typography variant="h5" component="div" style={{ textAlign: "center", marginBottom: '-2em' }}>
+                    <Typography variant="h5" component="div" style={{ textAlign: "center" }}>
                         {postPrayer.title}
                     </Typography>
                 </Grid>
