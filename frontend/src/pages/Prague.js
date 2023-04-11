@@ -6,7 +6,7 @@ const Prague = () => {
     const imgWidth = isIphone13 ? 150 : 400;
     const imgHeight = isIphone13 ? 150 : 400;
     return (
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: isIphone13 ? '180vh' : '100vh' }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: isIphone13 ? '200vh' : '100vh' }}>
             <Card sx={{ maxWidth: isIphone13 ? '70vw' : '60vw' }}>
                 <CardHeader
                     title="Infant Jesus"
