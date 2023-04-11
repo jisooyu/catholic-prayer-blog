@@ -9,7 +9,7 @@ const PostPrayer = ({ postPrayer }) => {
         alignItems: 'center',
         justifyContent: 'center',
         marginTop: isIphone13 ? '4em' : '3em',
-        marginLeft: isIphone13 ? '2em' : '5em',
+        marginLeft: isIphone13 ? '1em' : '5em',
         height: isIphone13 ? '100vh' : '35vh',
         width: isIphone13 ? '90vw' : '50vw',
         paddingTop: isIphone13 ? '4em' : '1em',
@@ -17,7 +17,7 @@ const PostPrayer = ({ postPrayer }) => {
     };
     const gridStyle = {
         height: isIphone13 ? '90vh' : '35vh',
-        width: isIphone13 ? '85vw' : '40vw',
+        width: isIphone13 ? '90vw' : '40vw',
         backgroundColor: 'red',
     }
 
