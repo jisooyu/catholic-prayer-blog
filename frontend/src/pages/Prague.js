@@ -17,7 +17,7 @@ const Prague = () => {
             overflow: 'scroll'
         }}>
             <CardHeader
-                sx={{ mt: isIphone13 ? 2 : 50 }}
+                sx={{ mt: isIphone13 ? 5 : 50 }}
                 title="Infant Jesus"
                 subheader="1637"
             />
