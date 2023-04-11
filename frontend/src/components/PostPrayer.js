@@ -8,7 +8,7 @@ const PostPrayer = ({ postPrayer }) => {
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        marginTop: isIphone13 ? '1em' : '2em',
+        marginTop: isIphone13 ? '4em' : '3em',
         marginLeft: isIphone13 ? '2em' : '5em',
         height: isIphone13 ? '80vh' : '35vh',
         width: isIphone13 ? '82vw' : '50vw',
@@ -17,13 +17,13 @@ const PostPrayer = ({ postPrayer }) => {
     };
     const gridStyle = {
         height: isIphone13 ? '80vh' : '35vh',
-        backgroundColor: 'red',
+        width: isIphone13 ? '60vw' : '40vw'
     }
 
     return (
         <Paper elevation={0} sx={paperStyle}>
-            <Grid container spacing={0.01}>
-                <Grid item xs container direction="column" spacing={1} sx={gridStyle}>
+            <Grid container spacing={0.5}>
+                <Grid item xs container direction="column" spacing={0.5} sx={gridStyle}>
                     <Grid item xs>
                         <Typography variant="h5" component="div" style={{ textAlign: "center" }}>
                             {postPrayer.title}
