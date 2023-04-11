@@ -21,11 +21,8 @@ const PostPrayer = ({ postPrayer }) => {
     }
 
     return (
-        <Paper
-            elevation={0}
-            sx={paperStyle}
-        >
-            <Grid container spacing={1}>
+        <Paper elevation={0} sx={paperStyle}>
+            <Grid container spacing={0.2}>
                 <Grid item xs container direction="column" spacing={1}>
                     <Grid item xs sx={gridStyle}>
                         <Typography gutterBottom variant="h5" component="div" style={{ textAlign: "left" }}>
@@ -40,7 +37,8 @@ const PostPrayer = ({ postPrayer }) => {
                     </Grid>
                 </Grid>
             </Grid>
-        </Paper >
+        </Paper>
     );
 }
+
 export default PostPrayer;
