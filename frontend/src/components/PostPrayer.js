@@ -17,6 +17,7 @@ const PostPrayer = ({ postPrayer }) => {
     };
     const gridStyle = {
         height: isIphone13 ? '80vh' : '35vh',
+        backgroundColor: 'red',
     }
 
     return (
