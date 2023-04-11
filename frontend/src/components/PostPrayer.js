@@ -10,13 +10,13 @@ const PostPrayer = ({ postPrayer }) => {
         justifyContent: 'center',
         marginTop: isIphone13 ? '4em' : '3em',
         marginLeft: isIphone13 ? '2em' : '5em',
-        height: isIphone13 ? '90vh' : '35vh',
+        height: isIphone13 ? '100vh' : '35vh',
         width: isIphone13 ? '82vw' : '50vw',
         paddingTop: isIphone13 ? '4em' : '1em',
         overflow: 'scroll'
     };
     const gridStyle = {
-        height: isIphone13 ? '90vh' : '35vh',
+        height: isIphone13 ? '98vh' : '35vh',
         width: isIphone13 ? '70vw' : '40vw',
         backgroundColor: 'red',
     }
