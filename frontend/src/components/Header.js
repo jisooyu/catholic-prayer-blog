@@ -61,8 +61,9 @@ const Header = () => {
         <div style={{ height: 'auto' }}>
             <AppBar>
                 <Toolbar sx={toolbarStyle} >
-                    <SlowMotionVideoIcon sx={{ color: 'white' }} />
+
                     <Typography>
+                        <SlowMotionVideoIcon sx={{ color: 'white' }} />
                         <Link href='/' sx={typoStyle} >
                             Catholic Prayers
                         </Link>
