@@ -21,7 +21,8 @@ const PostPrayer = ({ postPrayer }) => {
         backgroundColor: 'red'
     }
     const gridItemStyle = {
-        marginTop: isIphone13 ? '-1em' : '0em', marginBottom: isIphone13 ? '-1em' : '0em'
+        marginTop: isIphone13 ? '-0.5em' : '0.5em',
+        marginBottom: isIphone13 ? '-0.5em' : '0.5em'
     };
     return (
         <Paper elevation={0} sx={paperStyle}>
