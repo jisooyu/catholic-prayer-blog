@@ -9,9 +9,9 @@ const Fatima = () => {
             flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'center',
-            marginTop: isIphone13 ? '4em' : '12em',
-            marginLeft: isIphone13 ? '1em' : '5em',
-            height: isIphone13 ? '200vh' : '83vh',
+            marginTop: isIphone13 ? '4em' : '10em',
+            marginLeft: isIphone13 ? '2em' : '5em',
+            height: isIphone13 ? '210vh' : '83vh',
             width: isIphone13 ? '82vw' : '65vw',
             paddingTop: isIphone13 ? '4em' : '1em',
             overflow: 'scroll'
