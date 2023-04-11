@@ -19,7 +19,7 @@ const Fatima = () => {
             }}>
                 <CardHeader
                     sx={{ mt: isIphone13 ? 2 : 50 }}
-                    title="Virgin Mary in Fatima"
+                    title="Our Lady of the Rosary"
                     subheader="1917"
                 />
                 <CardMedia

@@ -74,7 +74,7 @@ const Header = () => {
                     </Typography>
                     <Typography>
                         <Link href='/fatima' sx={typoStyle}>
-                            Our Lady of Fatima
+                            Our Lady of the Rosary
                         </Link>
                     </Typography>
                     <Typography>
