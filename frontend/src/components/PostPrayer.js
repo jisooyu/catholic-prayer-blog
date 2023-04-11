@@ -17,7 +17,8 @@ const PostPrayer = ({ postPrayer }) => {
     };
     const gridStyle = {
         height: isIphone13 ? '80vh' : '35vh',
-        width: isIphone13 ? '60vw' : '40vw'
+        width: isIphone13 ? '60vw' : '40vw',
+        backgroundColor: 'red'
     }
 
     return (
