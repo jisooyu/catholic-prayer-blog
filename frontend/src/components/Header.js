@@ -110,7 +110,7 @@ const Header = () => {
                         {userObject ? (
                             <div style={{
                                 display: 'flex',
-                                alignItems: 'center',
+                                alignItems: 'right',
                                 cursor: 'pointer'
                             }}>
                                 <LogoutIcon onClick={googleLogout} />
@@ -119,7 +119,7 @@ const Header = () => {
                         ) : (
                             <div style={{
                                 display: 'flex',
-                                alignItems: 'center',
+                                alignItems: 'right',
                                 cursor: 'pointer'
                             }}>
                                 <LoginIcon onClick={googleLogin} />
