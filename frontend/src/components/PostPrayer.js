@@ -16,7 +16,7 @@ const PostPrayer = ({ postPrayer }) => {
         overflow: 'scroll'
     };
     const gridStyle = {
-        height: isIphone13 ? '70vh' : '35vh',
+        height: isIphone13 ? '90vh' : '35vh',
         width: isIphone13 ? '70vw' : '40vw',
         backgroundColor: 'red',
     }
