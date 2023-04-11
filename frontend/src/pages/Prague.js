@@ -5,7 +5,6 @@ const Prague = () => {
     const isIphone13 = useMediaQuery('(max-width: 400px)');
 
     return (
-
         <Card sx={{
             display: 'flex',
             flexDirection: 'column',
