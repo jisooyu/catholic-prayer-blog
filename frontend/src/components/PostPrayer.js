@@ -22,19 +22,17 @@ const PostPrayer = ({ postPrayer }) => {
             sx={paperStyle}
         >
             <Grid container spacing={1}>
-                <Grid item xs={12} sm container>
-                    <Grid item xs container direction="column" spacing={2}>
-                        <Grid item xs sx={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", height: "110vh" }}>
-                            <Typography gutterBottom variant="h5" component="div" style={{ textAlign: "center" }}>
-                                {postPrayer.title}
-                            </Typography>
-                            <Typography variant="subtitle1" gutterBottom>
-                                {postPrayer.content}
-                            </Typography>
-                            <Typography variant="h6" gutterBottom style={{ textAlign: "center" }}>
-                                {postPrayer.ending}
-                            </Typography>
-                        </Grid>
+                <Grid item xs container direction="column" spacing={1}>
+                    <Grid item xs sx={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", height: "60vh" }}>
+                        <Typography gutterBottom variant="h5" component="div" style={{ textAlign: "center" }}>
+                            {postPrayer.title}
+                        </Typography>
+                        <Typography variant="subtitle1" gutterBottom>
+                            {postPrayer.content}
+                        </Typography>
+                        <Typography variant="h6" gutterBottom style={{ textAlign: "center" }}>
+                            {postPrayer.ending}
+                        </Typography>
                     </Grid>
                 </Grid>
             </Grid>
