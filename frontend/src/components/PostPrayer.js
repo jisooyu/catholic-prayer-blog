@@ -30,7 +30,7 @@ const PostPrayer = ({ postPrayer }) => {
                         {postPrayer.title}
                     </Typography>
                 </Grid>
-                <Grid item xs={12} sm={4} textAlign="left">
+                <Grid item xs={12} sm={4} textAlign="center">
                     <Typography variant="subtitle1">
                         {postPrayer.content}
                     </Typography>
