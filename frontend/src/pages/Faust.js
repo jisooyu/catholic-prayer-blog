@@ -10,7 +10,7 @@ const Faust = () => {
             alignItems: 'center',
             justifyContent: 'center',
             marginTop: isIphone13 ? '3em' : '12em',
-            marginLeft: isIphone13 ? '1em' : '5em',
+            marginLeft: isIphone13 ? '2em' : '5em',
             height: isIphone13 ? '200vh' : '83vh',
             width: isIphone13 ? '82vw' : '65vw',
             paddingTop: isIphone13 ? '4em' : '1em',
