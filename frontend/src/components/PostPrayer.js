@@ -1,8 +1,9 @@
-import * as React from 'react';
-import { Grid, Paper, Typography, useMediaQuery } from '@mui/material'
+import { Grid, Typography, Paper } from '@mui/material';
+import { useMediaQuery } from '@mui/material';
 
 const PostPrayer = ({ postPrayer }) => {
     const isIphone13 = useMediaQuery('(max-width: 400px)');
+
     const paperStyle = {
         display: 'flex',
         flexDirection: 'column',
@@ -15,36 +16,33 @@ const PostPrayer = ({ postPrayer }) => {
         paddingTop: isIphone13 ? '4em' : '1em',
         overflow: 'scroll'
     };
+
     const gridStyle = {
-        height: isIphone13 ? '90vh' : '35vh',
-        width: isIphone13 ? '90vw' : '40vw',
-        backgroundColor: 'red'
-    }
-    const gridItemStyle = {
-        marginTop: isIphone13 ? '-0.5em' : '0.5em',
-        marginBottom: isIphone13 ? '-0.5em' : '0.5em'
+        height: isIphone13 ? '60vh' : '20vh',
+        backgroundColor: 'red',
     };
+
     return (
         <Paper elevation={0} sx={paperStyle}>
-            <Grid container spacing={0.5} sx={gridStyle} direction="column">
-                <Grid item xs container direction="column" {...gridItemStyle}>
-                    <Typography variant="h5" component="div" style={{ textAlign: "center" }}>
+            <Grid container spacing={1}>
+                <Grid item xs={12} sm={4} textAlign="center">
+                    <Typography variant="h5" component="div">
                         {postPrayer.title}
                     </Typography>
                 </Grid>
-                <Grid item xs container direction="column" style={{ textAlign: "left", padding: "1em", }}{...gridItemStyle}>
-                    <Typography variant="subtitle1" style={{ marginTop: '-2em', marginBottom: '-1em' }} >
+                <Grid item xs={12} sm={4} textAlign="center">
+                    <Typography variant="subtitle1">
                         {postPrayer.content}
                     </Typography>
                 </Grid>
-                <Grid item xs container direction="column" {...gridItemStyle}>
-                    <Typography variant="h6" style={{ textAlign: "center" }}>
+                <Grid item xs={12} sm={4} textAlign="center">
+                    <Typography variant="h6">
                         {postPrayer.ending}
                     </Typography>
                 </Grid>
             </Grid>
-        </Paper >
+        </Paper>
     );
-}
+};
 
 export default PostPrayer;
