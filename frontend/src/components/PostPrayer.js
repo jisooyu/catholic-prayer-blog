@@ -25,17 +25,17 @@ const PostPrayer = ({ postPrayer }) => {
         <Paper elevation={0} sx={paperStyle}>
             <Grid container spacing={0.5} sx={gridStyle} direction="column">
                 <Grid item xs container direction="column" >
-                    <Typography variant="h5" component="div" style={{ textAlign: "center", marginTop: '-0.25em', marginBottom: '-0.25em' }}>
+                    <Typography variant="h5" component="div" style={{ textAlign: "center", marginBottom: '-0.25em' }}>
                         {postPrayer.title}
                     </Typography>
                 </Grid>
-                <Grid item xs container direction="column" style={{ textAlign: "left", padding: "1em", marginTop: '-0.25em', marginBottom: '-0.25em' }}>
+                <Grid item xs container direction="column" style={{ textAlign: "left", padding: "1em", marginTop: '-2em', marginBottom: '-2em' }}>
                     <Typography variant="subtitle1"  >
                         {postPrayer.content}
                     </Typography>
                 </Grid>
                 <Grid item xs container direction="column" >
-                    <Typography variant="h6" style={{ textAlign: "center", marginTop: '-0.25em', marginBottom: '-0.25em' }}>
+                    <Typography variant="h6" style={{ textAlign: "center", marginTop: '-2em', marginBottom: '-2em' }}>
                         {postPrayer.ending}
                     </Typography>
                 </Grid>
