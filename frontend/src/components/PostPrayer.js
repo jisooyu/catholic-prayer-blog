@@ -23,7 +23,7 @@ const PostPrayer = ({ postPrayer }) => {
 
     return (
         <Paper elevation={0} sx={paperStyle}>
-            <Grid container spacing={0.5} sx={gridStyle}>
+            <Grid container spacing={0.5} sx={gridStyle} direction="column">
                 {/* <Grid item xs container direction="column" spacing={0.5}> */}
                 <Grid item xs container direction="column" spacing={0.5}>
                     <Typography variant="h5" component="div" style={{ textAlign: "center" }}>
@@ -40,9 +40,9 @@ const PostPrayer = ({ postPrayer }) => {
                         {postPrayer.ending}
                     </Typography>
                 </Grid>
-            </Grid>
+                {/* </Grid> */}
 
-            {/* </Grid> */}
+            </Grid>
         </Paper>
     );
 }
