@@ -1,20 +1,16 @@
 import React from 'react';
 import { Card, CardMedia, CardContent, CardHeader, Typography, useMediaQuery } from '@mui/material'
-
+import { cardStyle } from '../styles/cardStyle'
 const Fatima = () => {
     const isIphone13 = useMediaQuery('(max-width: 400px)');
     return (
         <Card sx={{
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'center',
+            ...cardStyle,
             marginTop: isIphone13 ? '5em' : '8em',
             marginLeft: isIphone13 ? '2em' : '5em',
             height: isIphone13 ? '210vh' : '83vh',
             width: isIphone13 ? '82vw' : '50vw',
             paddingTop: isIphone13 ? '4em' : '1em',
-            overflow: 'scroll'
         }}>
             <CardHeader
                 sx={{ mt: isIphone13 ? 5 : 50 }}
