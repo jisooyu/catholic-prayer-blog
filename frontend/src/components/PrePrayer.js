@@ -1,14 +1,14 @@
 import React from 'react'
 import { Paper, useMediaQuery } from '@mui/material'
-import { cardStyle } from '../styles/cardStyle';
+// import { cardStyle } from '../styles/cardStyle';
 
 const PrePrayer = ({ prePrayer }) => {
     const isIphone13 = useMediaQuery('(max-width: 400px)');
 
     const paperStyle = {
-        ...cardStyle,
-        height: isIphone13 ? '200vh' : '80vh',
-        paddingTop: isIphone13 ? '4em' : '1em',
+        width: '80vw',
+        height: isIphone13 ? '120vh' : '80vh',
+        // paddingTop: isIphone13 ? '4em' : '1em',
     };
 
     const prayerTitle = {
@@ -29,7 +29,7 @@ const PrePrayer = ({ prePrayer }) => {
         justifyContent: 'center',
         marginRight: '5em',
         marginLeft: '5em',
-        width: '80%'
+        // width: '80%'
     }
 
     return (
