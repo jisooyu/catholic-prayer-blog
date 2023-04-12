@@ -1,6 +1,6 @@
 // cardStyle.js
 
-export const cardStyles = {
+export const cardStyle = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
