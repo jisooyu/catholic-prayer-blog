@@ -85,7 +85,7 @@ const Header = () => {
 
                     {/* problem occurs here. 왜 MenuItem을 선택하면 header의 color가 바뀔까? */}
                     <Typography sx={typoStyle} onClick={handleMenuOpen}>
-                        Rosary
+                        묵주기도
                     </Typography>
                     <Menu
                         anchorEl={anchorEl}
