@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header'
-import Landing from './pages/Landing';
+import Jesus from './pages/Jesus';
 import Fatima from './pages/Fatima'
 import Prague from './pages/Prague'
 import Faust from './pages/Faust'
@@ -19,7 +19,7 @@ const App = () => {
       <Router>
         <Header />
         <Routes>
-          <Route path='/' element={<Landing />} />
+          <Route path='/' element={<Jesus />} />
           <Route path="/fatima" element={<Fatima />} />
           <Route path='/prague' element={<Prague />} />
           <Route path='/faust' element={<Faust />} />
