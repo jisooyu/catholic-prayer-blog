@@ -29,7 +29,7 @@ const PrePrayer = ({ prePrayer }) => {
         justifyContent: 'center',
         marginRight: '5em',
         marginLeft: '5em',
-        // width: '80%'
+        width: '80%'
     }
 
     return (
