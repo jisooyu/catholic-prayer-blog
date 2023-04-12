@@ -1,7 +1,6 @@
 import React from 'react'
 import { Paper, useMediaQuery } from '@mui/material'
 import { cardStyle } from '../styles/cardStyle';
-
 const PrePrayer = ({ prePrayer }) => {
     const isIphone13 = useMediaQuery('(max-width: 400px)');
 
@@ -14,9 +13,9 @@ const PrePrayer = ({ prePrayer }) => {
     const prayerTitle = { textAlign: 'center', marginTop: '20px' }
     const repetitionStyle = { textAlign: 'center', fontWeight: 'bold', marginTop: '20px', marginRight: '30px' }
     const prayerStyle = {
-        // display: 'flex',
-        // alignItems: 'center',
-        // justifyContent: 'center',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
         marginRight: '5em',
         marginLeft: '5em',
         width: '80%'
