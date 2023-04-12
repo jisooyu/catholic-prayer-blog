@@ -17,7 +17,7 @@ const Header = () => {
             cursor: 'pointer'
         },
         marginLeft: isIphone13 ? '2px' : '8px',
-        fontSize: isIphone13 ? '14px' : '16px'
+        fontSize: '14px'
     }
 
     const userObject = useContext(userContext);
@@ -64,22 +64,22 @@ const Header = () => {
                     <Typography>
                         <SlowMotionVideoIcon sx={{ color: 'white' }} />
                         <Link href='/' sx={typoStyle} >
-                            Catholic Prayers
+                            주님의 기도
                         </Link>
                     </Typography>
                     <Typography>
                         <Link href='/prague' sx={typoStyle} >
-                            Infant Jesus
+                            프라그 아기예수님기도
                         </Link>
                     </Typography>
                     <Typography>
                         <Link href='/fatima' sx={typoStyle}>
-                            Our Lady of the Rosary
+                            파티마 성모님기도
                         </Link>
                     </Typography>
                     <Typography>
                         <Link href='/faust' sx={typoStyle}>
-                            Sister Faustina
+                            하느님 자비의 기도
                         </Link>
                     </Typography>
 
