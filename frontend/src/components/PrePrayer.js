@@ -28,7 +28,7 @@ const PrePrayer = ({ prePrayer }) => {
         alignItems: 'center',
         justifyContent: 'center',
         marginRight: '5em',
-        marginLeft: '5em',
+        marginLeft: '2em',
         width: '80%'
     }
 
