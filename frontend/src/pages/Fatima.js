@@ -32,7 +32,7 @@ const Fatima = () => {
             <CardContent>
                 <Typography sx={{ mx: "auto", marginTop: "5" }}>
                     <h2 style={{ textAlign: 'center' }}>파티마 성모님 발현</h2>
-                    <Typography>
+                    <Typography style={{ marginTop: '3' }}>
                         <p>
                             The apparitions of the Virgin Mary in Fatima, Portugal, are one of the most famous and well-documented Marian apparitions in Catholic history. The events took place in 1917, when three shepherd children - Lucia dos Santos, Francisco Marto, and Jacinta Marto - reported seeing a beautiful lady appear to them on six occasions between May and October of that year.
                             The lady identified herself as "Our Lady of the Rosary" and told the children to pray the rosary daily for peace in the world and the conversion of sinners. She also shared with them three secrets or messages, which Lucia later revealed to the Church. The first two secrets were revealed in 1941 and concerned a vision of hell and a warning of World War II. The third secret was revealed in 2000 and was interpreted as a prediction of the attempted assassination of Pope John Paul II in 1981.
