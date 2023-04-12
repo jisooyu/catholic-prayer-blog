@@ -30,7 +30,7 @@ const Fatima = () => {
                 image={`${process.env.PUBLIC_URL}/fatima-mother.jpeg`}
             />
             <CardContent>
-                <Typography sx={{ mx: "auto" }}>
+                <Typography sx={{ mx: "auto", marginTop: "5" }}>
                     <h2 style={{ textAlign: 'center' }}>파티마 성모님 발현</h2>
                     <Typography>
                         <p>
