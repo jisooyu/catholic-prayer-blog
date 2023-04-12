@@ -10,7 +10,6 @@ const Faust = () => {
             width: isIphone13 ? '82vw' : '65vw',
         }}>
             <CardHeader
-                // sx={{ mt: isIphone13 ? 5 : 50 }}
                 title="Jesus, I trust in you."
                 subheader="1943"
             />

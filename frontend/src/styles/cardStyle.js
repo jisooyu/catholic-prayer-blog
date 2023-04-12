@@ -7,6 +7,5 @@ export const cardStyle = {
     justifyContent: 'center',
     height: '83vh',
     width: '50vw',
-    paddingTop: '1em',
     overflow: 'scroll'
 };
