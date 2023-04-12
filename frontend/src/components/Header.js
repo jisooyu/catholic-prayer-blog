@@ -61,7 +61,6 @@ const Header = () => {
         <div style={{ height: 'auto' }}>
             <AppBar>
                 <Toolbar sx={toolbarStyle} >
-
                     <Typography>
                         <SlowMotionVideoIcon sx={{ color: 'white' }} />
                         <Link href='/' sx={typoStyle} >

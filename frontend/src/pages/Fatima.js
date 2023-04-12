@@ -31,7 +31,7 @@ const Fatima = () => {
             />
             <CardContent>
                 <Typography sx={{ mx: "auto" }}>
-                    <h2>파티마 성모님 발현</h2>
+                    <h2 style={{ textAlign: 'center' }}>파티마 성모님 발현</h2>
                     <Typography>
                         <p>
                             The apparitions of the Virgin Mary in Fatima, Portugal, are one of the most famous and well-documented Marian apparitions in Catholic history. The events took place in 1917, when three shepherd children - Lucia dos Santos, Francisco Marto, and Jacinta Marto - reported seeing a beautiful lady appear to them on six occasions between May and October of that year.
