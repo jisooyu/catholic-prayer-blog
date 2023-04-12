@@ -59,7 +59,7 @@ const Header = () => {
     }
     return (
         <div style={{ height: 'auto' }}>
-            <AppBar>
+            <AppBar position="static">
                 <Toolbar sx={toolbarStyle} >
                     <Typography>
                         <SlowMotionVideoIcon sx={{ color: 'white' }} />
