@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { styled, Grid, Paper, Typography, ButtonBase, useMediaQuery } from '@mui/material'
-import { cardStyle } from '../styles/cardStyle';
+// import { cardStyle } from '../styles/cardStyle';
 
 const Prayer = ({ prayer }) => {
     const isIphone13 = useMediaQuery('(max-width: 400px)');
@@ -11,10 +11,9 @@ const Prayer = ({ prayer }) => {
         maxHeight: '100%',
     });
     const paperStyle = {
-        ...cardStyle,
         height: isIphone13 ? '80vh' : '35vh',
         width: isIphone13 ? '82vw' : '50vw',
-
+        paddingTop: isIphone13 ? '4em' : '1em',
     };
 
     return (

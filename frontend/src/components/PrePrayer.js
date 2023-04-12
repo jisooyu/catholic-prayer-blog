@@ -8,7 +8,7 @@ const PrePrayer = ({ prePrayer }) => {
     const paperStyle = {
         width: '80vw',
         height: isIphone13 ? '140vh' : '80vh',
-        // paddingTop: isIphone13 ? '4em' : '1em',
+        paddingTop: isIphone13 ? '4em' : '1em',
     };
 
     const prayerTitle = {
