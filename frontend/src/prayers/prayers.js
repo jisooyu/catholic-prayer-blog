@@ -1,5 +1,3 @@
-
-
 export const joyfulPrePrayer =
 {
     title: "환희의 신비",
