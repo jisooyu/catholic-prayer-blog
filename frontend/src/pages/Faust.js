@@ -8,7 +8,7 @@ const Faust = () => {
             ...cardStyle,
             height: isIphone13 ? '200vh' : '83vh',
             width: isIphone13 ? '82vw' : '65vw',
-            marginLeft: isIphone13 ? '3em' : '1em'
+            marginLeft: isIphone13 ? '2em' : '1em'
         }}>
             <CardHeader
                 title="Jesus, I trust in you."
