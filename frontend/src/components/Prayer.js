@@ -14,6 +14,7 @@ const Prayer = ({ prayer }) => {
         height: isIphone13 ? '80vh' : '35vh',
         width: isIphone13 ? '82vw' : '50vw',
         paddingTop: isIphone13 ? '4em' : '1em',
+        marginLeft: isIphone13 ? '3em' : '1em'
     };
 
     return (

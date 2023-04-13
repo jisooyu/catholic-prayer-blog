@@ -6,10 +6,10 @@ const PrePrayer = ({ prePrayer }) => {
     const isIphone13 = useMediaQuery('(max-width: 400px)');
 
     const paperStyle = {
-        width: '80vw',
-        height: isIphone13 ? '140vh' : '80vh',
+        height: isIphone13 ? '80vh' : '35vh',
+        width: isIphone13 ? '82vw' : '50vw',
         paddingTop: isIphone13 ? '4em' : '1em',
-        marginLeft: isIphone13 ? '2em' : '1em'
+        marginLeft: isIphone13 ? '3em' : '1em'
     };
 
     const prayerTitle = {
