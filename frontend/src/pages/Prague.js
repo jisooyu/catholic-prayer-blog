@@ -8,6 +8,7 @@ const Prague = () => {
             ...cardStyle,
             height: isIphone13 ? '200vh' : '83vh',
             width: isIphone13 ? '82vw' : '50vw',
+            marginLeft: isIphone13 ? '2em' : '1em'
         }}>
             <CardHeader
                 title="Infant Jesus"
@@ -18,11 +19,10 @@ const Prague = () => {
                 sx={{
                     height: isIphone13 ? 600 : 900,
                     width: isIphone13 ? 300 : 400,
-                    marginLeft: isIphone13 ? '2em' : '1em'
                 }}
                 image={`${process.env.PUBLIC_URL}/infant-jesus-prague.jpeg`}
             />
-            <CardContent sx={{ marginLeft: '2em' }}>
+            <CardContent >
                 <Typography >
                     <h3 style={{ textAlign: 'center' }}>아기 예수님께 드리는 9일 기도</h3>
                     <Typography >
