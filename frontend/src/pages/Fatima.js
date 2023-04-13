@@ -17,11 +17,12 @@ const Fatima = () => {
                 component="img"
                 sx={{
                     height: isIphone13 ? 600 : 900,
-                    width: isIphone13 ? 300 : 400
+                    width: isIphone13 ? 300 : 400,
+                    marginLeft: isIphone13 ? '2em' : '1em'
                 }}
                 image={`${process.env.PUBLIC_URL}/fatima-mother.jpeg`}
             />
-            <CardContent>
+            <CardContent sx={{ marginLeft: '2em' }}>
                 <Typography>
                     <h2 style={{ textAlign: 'center' }}>파티마 성모님 발현</h2>
                     <Typography>
