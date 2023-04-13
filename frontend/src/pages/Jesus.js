@@ -7,14 +7,11 @@ const Jesus = () => {
     return (
         <Card sx={{
             ...cardStyle,
-            marginTop: isIphone13 ? '5em' : '8em',
-            marginLeft: isIphone13 ? '2em' : '5em',
-            height: isIphone13 ? '200vh' : '83vh',
+            height: isIphone13 ? '210vh' : '83vh',
             width: isIphone13 ? '82vw' : '50vw',
-            paddingTop: isIphone13 ? '4em' : '1em',
+            marginLeft: isIphone13 ? '2em' : '1em'
         }}>
             <CardHeader
-                sx={{ mt: isIphone13 ? 5 : 50 }}
                 title="Lord's Prayer"
                 subheader="주님의 기도"
             />
@@ -27,7 +24,7 @@ const Jesus = () => {
                 image={`${process.env.PUBLIC_URL}/Lords-Prayer.jpeg`}
             />
             <CardContent>
-                <Typography sx={{ mx: "auto", marginTop: '5' }}>
+                <Typography sx={{ marginTop: '5' }}>
                     <h3 style={{ textAlign: 'center' }}>주님의 기도</h3>
                     <Typography style={{ marginTop: '3' }}>
                         <p>하늘에 계신 우리 아버지</p>
