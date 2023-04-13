@@ -8,6 +8,7 @@ const Faust = () => {
             ...cardStyle,
             height: isIphone13 ? '200vh' : '83vh',
             width: isIphone13 ? '82vw' : '65vw',
+            marginLeft: isIphone13 ? '3em' : '1em'
         }}>
             <CardHeader
                 title="Jesus, I trust in you."
@@ -17,12 +18,11 @@ const Faust = () => {
                 sx={{
                     height: isIphone13 ? 600 : 900,
                     width: isIphone13 ? 300 : 400,
-                    marginLeft: isIphone13 ? '2em' : '1em'
                 }}
                 component="img"
                 image={`${process.env.PUBLIC_URL}/faust-jesus.jpeg`}
             />
-            <CardContent sx={{ marginLeft: '2em' }}>
+            <CardContent >
                 <Typography >
                     <h3>(시작 기도)</h3>
                     <h3>주님의 기도, 성모송, 사도신경</h3>
