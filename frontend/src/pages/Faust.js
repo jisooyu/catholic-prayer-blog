@@ -16,7 +16,8 @@ const Faust = () => {
             <CardMedia
                 sx={{
                     height: isIphone13 ? 600 : 900,
-                    width: isIphone13 ? 300 : 400
+                    width: isIphone13 ? 300 : 400,
+                    marginLeft: isIphone13 ? '2em' : '1em'
                 }}
                 component="img"
                 image={`${process.env.PUBLIC_URL}/faust-jesus.jpeg`}
