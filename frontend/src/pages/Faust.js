@@ -21,7 +21,7 @@ const Faust = () => {
                 component="img"
                 image={`${process.env.PUBLIC_URL}/faust-jesus.jpeg`}
             />
-            <CardContent >
+            <CardContent sx={{ marginLeft: '2em' }}>
                 <Typography >
                     <h3>(시작 기도)</h3>
                     <h3>주님의 기도, 성모송, 사도신경</h3>
