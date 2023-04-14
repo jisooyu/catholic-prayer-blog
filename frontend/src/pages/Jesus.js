@@ -18,7 +18,7 @@ const Jesus = () => {
             <CardMedia
                 component="img"
                 sx={{
-                    height: isIphone13 ? 400 : 900,
+                    height: isIphone13 ? 300 : 900,
                     width: isIphone13 ? 200 : 400
                 }}
                 image={`${process.env.PUBLIC_URL}/Lords-Prayer.jpeg`}
