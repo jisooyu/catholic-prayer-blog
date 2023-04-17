@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { styled, Grid, Paper, Typography, ButtonBase, useMediaQuery } from '@mui/material'
-// import { cardStyle } from '../styles/cardStyle';
 
 const Prayer = ({ prayer }) => {
     const isIphone13 = useMediaQuery('(max-width: 400px)');
