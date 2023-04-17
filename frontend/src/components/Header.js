@@ -74,7 +74,7 @@ const Header = () => {
                     </Typography>
                     <Typography>
                         <Link href='/fatima' sx={typoStyle}>
-                            파티마 성모님기도
+                            파티마 성모님발현
                         </Link>
                     </Typography>
                     <Typography>
