@@ -6,8 +6,8 @@ const Prague = () => {
     return (
         <Card sx={{
             ...cardStyle,
-            height: isIphone13 ? '200vh' : '83vh',
-            width: isIphone13 ? '82vw' : '50vw',
+            height: isIphone13 ? '200vh' : '100vh',
+            width: isIphone13 ? '82vw' : '70vw',
             marginLeft: isIphone13 ? '2em' : '1em'
         }}>
             <CardHeader

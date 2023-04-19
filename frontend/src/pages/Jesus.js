@@ -7,7 +7,7 @@ const Jesus = () => {
     return (
         <Card sx={{
             ...cardStyle,
-            height: isIphone13 ? '210vh' : '100vh',
+            height: isIphone13 ? '200vh' : '100vh',
             width: isIphone13 ? '82vw' : '70vw',
             marginLeft: isIphone13 ? '2em' : '1em'
         }}>
