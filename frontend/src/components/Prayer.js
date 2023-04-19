@@ -10,8 +10,8 @@ const Prayer = ({ prayer }) => {
         maxHeight: '100%',
     });
     const paperStyle = {
-        height: isIphone13 ? '80vh' : '35vh',
-        width: isIphone13 ? '82vw' : '50vw',
+        height: isIphone13 ? '80vh' : '100vh',
+        width: isIphone13 ? '82vw' : '70vw',
         paddingTop: isIphone13 ? '4em' : '1em',
         marginLeft: isIphone13 ? '2em' : '1em'
     };
