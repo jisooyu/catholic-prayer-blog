@@ -35,8 +35,8 @@ const PrePrayer = ({ prePrayer }) => {
 
     return (
         <Paper elevation={0} sx={paperStyle} >
-            <div style={{ display: 'flex' }}>
-                <h2 style={{ textAlign: 'center', justifyContent: 'center', alignItems: 'center', flexGrow: '1' }}>{prePrayer.title}</h2>
+            <div style={{ display: 'flex', flexDirection: 'column' }}>
+                <h2 style={{ textAlign: 'center', justifyContent: 'center', alignItems: 'center' }}>{prePrayer.title}</h2>
                 <h3 style={{ textAlign: 'center' }}>{prePrayer.trinity}</h3>
             </div>
 
