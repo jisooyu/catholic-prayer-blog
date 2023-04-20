@@ -6,8 +6,8 @@ const PrePrayer = ({ prePrayer }) => {
     const isIphone13 = useMediaQuery('(max-width: 400px)');
 
     const paperStyle = {
-        height: isIphone13 ? '140vh' : '35vh',
-        width: isIphone13 ? '90vw' : '50vw',
+        height: isIphone13 ? '140vh' : '105vh',
+        width: isIphone13 ? '90vw' : '60vw',
         paddingTop: isIphone13 ? '4em' : '1em',
         marginLeft: isIphone13 ? '2em' : '1em'
     };
@@ -35,8 +35,11 @@ const PrePrayer = ({ prePrayer }) => {
 
     return (
         <Paper elevation={0} sx={paperStyle} >
-            <h2 style={{ textAlign: 'center' }}>{prePrayer.title}</h2>
-            <h3 style={{ textAlign: 'center' }}>{prePrayer.trinity}</h3>
+            <div style={{ display: 'flex' }}>
+                <h2 style={{ textAlign: 'center', justifyContent: 'center', alignItems: 'center', flexGrow: '1' }}>{prePrayer.title}</h2>
+                <h3 style={{ textAlign: 'center' }}>{prePrayer.trinity}</h3>
+            </div>
+
             <p style={{ textAlign: 'center', marginTop: '5px', fontWeight: 'bold' }}>{prePrayer.hailMary}</p>
             {/* 청원기도 */}
             <h3 style={prayerTitle}>{prePrayer.petitionPrayerTitle}</h3>

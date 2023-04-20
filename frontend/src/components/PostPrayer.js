@@ -1,5 +1,4 @@
-import { Grid, Typography, Paper } from '@mui/material';
-import { useMediaQuery } from '@mui/material';
+import { Grid, Typography, Paper, useMediaQuery } from '@mui/material';
 
 const PostPrayer = ({ postPrayer }) => {
     const isIphone13 = useMediaQuery('(max-width: 400px)');
@@ -12,7 +11,7 @@ const PostPrayer = ({ postPrayer }) => {
         marginTop: isIphone13 ? '4em' : '3em',
         marginLeft: isIphone13 ? '1em' : '5em',
         height: isIphone13 ? '100vh' : '100vh',
-        width: isIphone13 ? '90vw' : '70vw',
+        width: isIphone13 ? '90vw' : '65vw',
         paddingTop: isIphone13 ? '4em' : '1em',
         overflow: 'scroll'
     };
