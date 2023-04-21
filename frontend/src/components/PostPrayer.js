@@ -19,7 +19,7 @@ const PostPrayer = ({ postPrayer }) => {
 
     return (
         <Paper elevation={0} sx={paperStyle}>
-            <Grid container spacing={0.5}>
+            <Grid container spacing={0.5} direction='column'>
                 <Grid item xs={12} sm={3} textAlign="center" >
                     <Typography variant="h5" component="div">
                         {postPrayer.title}
