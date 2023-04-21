@@ -15,14 +15,11 @@ const PostPrayer = ({ postPrayer }) => {
         paddingTop: isIphone13 ? '4em' : '1em',
         overflow: 'scroll'
     };
-    const gridStyle = {
-        display: 'flex',
-        flexDirection: 'column'
-    }
+
 
     return (
         <Paper elevation={0} sx={paperStyle}>
-            <Grid container spacing={0.5} sx={gridStyle} >
+            <Grid container spacing={0.5} wrap='nowrap' >
                 <Grid item xs={12} sm={3} textAlign="center" >
                     <Typography variant="h5" component="div">
                         {postPrayer.title}
